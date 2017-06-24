@@ -6,39 +6,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Fieldbook application user manual</title>
-
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Book for learn how to use fieldbook aplication for statistical analysis.">
   <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
-
 
   <meta property="og:title" content="Fieldbook application user manual" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://flavjack.github.io/fieldbook-usm/" />
   <meta property="og:image" content="https://flavjack.github.io/fieldbook-usm/img/cover.png" />
-  <meta property="og:description" content="User manual to use fieldbook aplication for statistical analysis." />
+  <meta property="og:description" content="Book for learn how to use fieldbook aplication for statistical analysis." />
   <meta name="github-repo" content="flavjack/fieldbook-usm" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Fieldbook application user manual" />
   
-  <meta name="twitter:description" content="User manual to use fieldbook aplication for statistical analysis." />
+  <meta name="twitter:description" content="Book for learn how to use fieldbook aplication for statistical analysis." />
   <meta name="twitter:image" content="https://flavjack.github.io/fieldbook-usm/img/cover.png" />
-
 
 <meta name="author" content="Flavio Lozano Isla, Jimmy Gomez Carrion, Felipe de Mendiburu">
 
 
 <meta name="date" content="2017-06-21">
 
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
-<link rel="next" href="descripcion-de-la-interface.html">
+<link rel="prev" href="multivariate.html">
+<link rel="next" href="statistic.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -97,7 +93,7 @@
 <li class="chapter" data-level="7" data-path="statistic.html"><a href="statistic.html"><i class="fa fa-check"></i><b>7</b> Statistic</a></li>
 <li class="chapter" data-level="8" data-path="graphics-1.html"><a href="graphics-1.html"><i class="fa fa-check"></i><b>8</b> Graphics</a></li>
 <li class="divider"></li>
-<li><a href="http://ec2-54-186-118-40.us-west-2.compute.amazonaws.com:3838/sample-apps/fieldbookpass/">FieldBook app</a></li>
+<li><a href="http://ec2-34-209-148-38.us-west-2.compute.amazonaws.com:3838/sample-apps/fieldbook/">FieldBook app</a></li>
 
 </ul>
 
@@ -116,21 +112,47 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Fieldbook application user manual</h1>
-
-<h4 class="author"><em>Flavio Lozano Isla, Jimmy R. Gomez Carrion, Felipe de Mendiburo</em></h4>
-<h4 class="date"><em>2017-06-19</em></h4>
-
+<div id="regression-1" class="section level1">
+<h1><span class="header-section-number">6</span> Regression</h1>
+<p>En regresión se puede construir modelos de regresion lineal simple, en <strong>Variable</strong> seleccionar la variable respuesta en la caja azul y verde, para el eje de las ordenadas y abscisas respectivamente.</p>
+<p>Al pie de cada caja se encuentra la casilla <strong>Label</strong> el cual se encuentran vacias, pero allí se le puede cambiar el rótulo al eje, pues de no modificarlo tomará el nombre de la columna con el que fue cargada la libreta de campo.</p>
+<p>En <strong>Brakes</strong> se trata de la segmentación de los ejes, y la mecánica es la misma mostrada en la construcción del <em>itm</em> <strong>Outliers</strong>.</p>
+<div class="figure">
+<img src="img/rlavel.png" alt="Selección de variables: " />
+<p class="caption"><strong>Selección de variables: </strong></p>
 </div>
-<div id="que-es-fieldbook" class="section level1">
-<h1><span class="header-section-number">1</span> ¿Qué es fieldbook?</h1>
-<p><strong>FieldBook</strong> es una aplicación de servicio estadístico <em>online</em> multiplataforma de interfaz amigable, intuitiva, y óptima; que busca ágilizar el desarrollo y validación de productos en las organizaciones inmersas en el sector Agropecuario e industrial, en el que normalmente de desarrollan experimentos en pro de la mejora de un producto o servicio.</p>
-<p>El uso de la plataforma es diversa, pero hace énfasis en el sector agropecuario donde normalmente necesitamos evaluar la Letalidad de un nuevo insumo para controlar una plaga o enfermedad, ya sea este producto sintético u orgánico, realizar pruebas de comparación de varios tipos de fertilizantes-enmiendas; el ingreso de variedades mejoradas, necesariamente deben de ser validados estadísticamente. Sin embargo, ello no quita su aplicación en otras áreas; como el comparar el rendimiento de nuevas baterias de celulares a climas extemos, por poner un ejemplo.</p>
-<p><strong>FieldBook</strong> es soporte para todos los trabajos antes mencionados y más, ellos deben de iniciar con la construcción de la libreta de campo. Es decir, la plataforma permite personalizar tu libreta (de campo) de acuerdo al diseño experimental que empleará, las varibles que analizará, las repeticiones que tendrá, etc.</p>
-<p>Una vez construida la libreta la podrás exportar e formato <em>.cvs ó .xlsx</em> para la colecta de datos, esta misma libreta será importada a la plataforma y siguiendo una ruta lógica recurrente vizualizarás en tiempo real la distribución de los datos, el nivel de correlación, comparación de medias, entre otras pruebas.</p>
-<p>Bienvenido al fascinante mundo de la innovación científica, nunca ántes el poder de las estadísticas a han estado <strong>a un clic de transformar los datos en conocimiento.</strong></p>
-<p><img src="img/canvas.png" width="404" style="display: block; margin: auto;" /></p>
+<p>despues de igresada las variables se contruye la gráfica de regresión linealla ecuación y el coeficiente de correlación de Pearson.</p>
+<div class="figure">
+<img src="img/rgrafico.png" alt="Regresión lineal: " />
+<p class="caption"><strong>Regresión lineal: </strong></p>
+</div>
+<p>Note además que los cambios realizados en <strong>lavel</strong> han modificado el nombre a los ejes, cambiando los nombre originales por <em>Longitud de la raíz</em> para el eje de la ordenadas y Peso <em>seco de la raíz</em>.</p>
+<p>En la caja <strong>Grouped</strong> define el factor que se va a grupar en la contrucción de la ecuación lineal, para el ejemplo selccionamos el factor Huesped, en el que se tienes 4 subniveles. Entonces se graficarán 4 rectas, pero notar la la ecuación representa la recta promedio de esos cuatro subniveles.</p>
+<p>Al pie de la caja roja se ubica <strong>Legend</strong> el que cambiar el nombre a la leyenda, el cual representa por defecto el nombre de la columna (el factor) con el que se contruyó la libreta de campo. Junto se ubica <strong>Levels</strong> ambos puedes modificcar los nombre de los subniveles del factor seleccionado.</p>
+<p>La consideración que debe tener para modificar <strong>Levels</strong> es que para modificar los nombre solo basta hacer dos espacios con la barra espaciadora para saltar al otro subnivel.</p>
+<p>Para el ejemplo se ha cambido el rótulo por defecto por <em>cinnamomi</em> y los subniveles por <em>g1</em> <em>g2</em> <em>g3</em> <em>g4</em></p>
+<div class="figure">
+<img src="img/rlavel1.png" alt="Selección de variables agrupado por: Huesped " />
+<p class="caption"><strong>Selección de variables agrupado por: Huesped </strong></p>
+</div>
+<p>Note además que tanto en las cajas de color verde y azul se han modificado los rótulos de los ejes, con la unidades respectivas, si se desea ingresar simbología extraña, visitar <em>itm</em> <strong>Outliers</strong>.</p>
+<div class="figure">
+<img src="img/rgrafico1.png" alt="Regresion lineal agrupados por: Huesped " />
+<p class="caption"><strong>Regresion lineal agrupados por: Huesped </strong></p>
+</div>
+<p>En la caja de exportación, encuentras:</p>
+<p><strong>Size</strong> Modifica el tamaño de fuente, por defecto 2, pero se recomiendo descargar la imagen en fuente Size 1.</p>
+<p><strong>Color</strong> Modifica el color que va tener la figura, a colores ó en blanco y negro.</p>
+<p><strong>Legend</strong> Modifica la ubicación de la leyenda, <em>none</em>: sin leyenda, <em>left</em>: izquierda. <em>right</em>: derecha. <em>top</em>: arriba. <em>bottom</em>: abajo.</p>
+<p><strong>Eq.x</strong> Modifica la ubicación de la ecuación lineal en el eje de la abscisas. <strong>Eq.y</strong> Modifica la ubicación de la ecuación lineal en el eje de la ordenadas.</p>
+<p>Ambos pares ordendados (<strong>Eq.x</strong>,<strong>Eq.y</strong>) señalan donde se ubicará la ecuación lienal en el plano.</p>
+<p><strong>height</strong> Modifica la altura de la figura.</p>
+<p><strong>weight</strong> Modifica lo ancho de la figura.</p>
+<p><strong>TIF(300dip)</strong> Es el formato en el que se descarga la figura, es el formato <strong>TIF</strong> el que se requiere para las publicaciones académicas.</p>
+<div class="figure">
+<img src="img/rtable.png" alt="caja de exportación " />
+<p class="caption"><strong>caja de exportación </strong></p>
+</div>
 
 </div>
             </section>
@@ -138,8 +160,8 @@
           </div>
         </div>
       </div>
-
-<a href="descripcion-de-la-interface.html" class="navigation navigation-next navigation-unique" aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+<a href="multivariate.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="statistic.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
@@ -167,7 +189,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/Flavjack/fieldbook-usm/blob/master/index.Rmd",
+"link": "https://github.com/Flavjack/fieldbook-usm/blob/master/regression.rmd",
 "text": "Edit"
 },
 "download": null,

@@ -1,0 +1,58 @@
+# Regression
+
+En regresión se puede construir modelos de regresion lineal simple, en **Variable** seleccionar la variable respuesta en la caja azul y verde, para el eje de las ordenadas y abscisas respectivamente.
+
+Al pie de cada caja se encuentra la casilla **Label** el cual se encuentran vacias, pero allí se le puede cambiar el rótulo al eje, pues de no modificarlo tomará el nombre de la columna con el que fue cargada la libreta de campo.
+
+En **Brakes** se trata de la segmentación de los ejes, y la mecánica es la misma mostrada en la construcción del _itm_ **Outliers**.
+
+
+![**Selección de variables: ** ](img/rlavel.png)
+
+despues de igresada las variables se contruye la gráfica de regresión linealla ecuación y el coeficiente de correlación  de Pearson. 
+
+![**Regresión lineal: ** ](img/rgrafico.png)
+
+Note además que los cambios realizados en **lavel** han modificado el nombre a los ejes, cambiando los nombre originales por _Longitud de la raíz_ para el eje de la ordenadas y Peso _seco de la raíz_.
+
+
+En la caja  **Grouped** define el factor que se va a grupar en la contrucción de la ecuación lineal, para el ejemplo selccionamos el factor Huesped, en el que se tienes 4 subniveles. Entonces se graficarán 4 rectas, pero notar la la ecuación representa la recta promedio de esos cuatro subniveles.
+
+Al pie de la caja roja se ubica **Legend** el que cambiar  el  nombre a la leyenda, el cual representa por defecto el nombre de la columna (el factor) con el que se contruyó la libreta de campo. Junto se ubica  **Levels** ambos puedes modificcar los nombre de los subniveles del factor seleccionado.
+
+La consideración que debe tener para modificar **Levels** es que para modificar los nombre solo basta hacer dos espacios con la barra espaciadora para saltar al otro subnivel.
+
+Para el ejemplo se ha cambido el rótulo por defecto por _cinnamomi_ y los subniveles por _g1_  _g2_  _g3_  _g4_
+
+![**Selección de variables agrupado por: Huesped ** ](img/rlavel1.png)
+
+Note además que tanto en las cajas de color verde y azul se han modificado los rótulos de los ejes, con la unidades respectivas, si se desea ingresar simbología extraña, visitar _itm_ **Outliers**.
+
+
+![**Regresion lineal agrupados por: Huesped ** ](img/rgrafico1.png)
+
+En la caja de exportación, encuentras:
+
+**Size**  Modifica el tamaño de fuente, por defecto 2, pero se recomiendo descargar la imagen en fuente Size 1.
+
+**Color** Modifica el color que va tener la figura, a colores ó en blanco y negro.
+
+**Legend** Modifica la ubicación de la leyenda, 
+        _none_: sin leyenda, 
+        _left_: izquierda.
+        _right_: derecha.
+        _top_: arriba.
+        _bottom_: abajo.
+
+**Eq.x** Modifica la ubicación de la ecuación lineal en el  eje de la abscisas.
+**Eq.y** Modifica la ubicación de la ecuación lineal en el  eje de la ordenadas.
+
+Ambos pares ordendados (**Eq.x**,**Eq.y**) señalan donde se ubicará la ecuación lienal en el plano.
+
+**height** Modifica la altura de la figura.
+
+**weight** Modifica lo ancho de la figura.
+
+**TIF(300dip)** Es el formato en el que se descarga la figura, es el formato **TIF**  el que se requiere para las publicaciones académicas.
+
+![**caja de exportación ** ](img/rtable.png)

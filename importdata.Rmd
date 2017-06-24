@@ -1,0 +1,13 @@
+# import data
+
+ Cuando hayas digitalizado tus datos recogidos de campo, de acuerdo a la plantilla diseñada en _Tools_ cargaras en **FieldBook** como url ó como xlsx.
+
+![**FieldBook**, **En amarillo**: Hoja en la que se encuentra tu base de datos que deseas subir. **En verde**: Actualizar  modificaciones  ](img/005_fieldbook.png)
+
+
+Una vez subido y actualizado el archivo. En ocaciones es muy util cargar una parte de la base de datos para un analisis parcial de bloques o factores, entonces en la herramienta **Filter** podrás filtrar la base de dato de acuerdo al criterio del investigador, tomando los factores que mejor los acerquen a sus propositos. Puede filtrar por evaluación  y algun tratamiento que sea de su particular interes.
+
+
+![**FieldBook - Filter** ](img/filter.png)
+
+De no escoger ningun filtro, se cargara toda la base de datos completa.

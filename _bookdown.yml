@@ -6,6 +6,7 @@ rmd_files: [
   "fieldbook.Rmd",
   "boxplot.Rmd",
   "multivariate.rmd",
+  "regression.rmd",
   "stat.rmd",
   "graphs.rmd"
   ]

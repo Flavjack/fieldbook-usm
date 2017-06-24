@@ -6,39 +6,35 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Fieldbook application user manual</title>
-
   <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
   <meta name="description" content="Book for learn how to use fieldbook aplication for statistical analysis.">
   <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
-
 
   <meta property="og:title" content="Fieldbook application user manual" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://flavjack.github.io/fieldbook-usm/" />
   <meta property="og:image" content="https://flavjack.github.io/fieldbook-usm/img/cover.png" />
-  <meta property="og:description" content="User manual to use fieldbook aplication for statistical analysis." />
+  <meta property="og:description" content="Book for learn how to use fieldbook aplication for statistical analysis." />
   <meta name="github-repo" content="flavjack/fieldbook-usm" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Fieldbook application user manual" />
   
-  <meta name="twitter:description" content="User manual to use fieldbook aplication for statistical analysis." />
+  <meta name="twitter:description" content="Book for learn how to use fieldbook aplication for statistical analysis." />
   <meta name="twitter:image" content="https://flavjack.github.io/fieldbook-usm/img/cover.png" />
-
 
 <meta name="author" content="Flavio Lozano Isla, Jimmy Gomez Carrion, Felipe de Mendiburu">
 
 
 <meta name="date" content="2017-06-21">
 
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="prev" href="statistic.html">
 
-<link rel="next" href="descripcion-de-la-interface.html">
 
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -97,7 +93,7 @@
 <li class="chapter" data-level="7" data-path="statistic.html"><a href="statistic.html"><i class="fa fa-check"></i><b>7</b> Statistic</a></li>
 <li class="chapter" data-level="8" data-path="graphics-1.html"><a href="graphics-1.html"><i class="fa fa-check"></i><b>8</b> Graphics</a></li>
 <li class="divider"></li>
-<li><a href="http://ec2-54-186-118-40.us-west-2.compute.amazonaws.com:3838/sample-apps/fieldbookpass/">FieldBook app</a></li>
+<li><a href="http://ec2-34-209-148-38.us-west-2.compute.amazonaws.com:3838/sample-apps/fieldbook/">FieldBook app</a></li>
 
 </ul>
 
@@ -116,21 +112,62 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Fieldbook application user manual</h1>
-
-<h4 class="author"><em>Flavio Lozano Isla, Jimmy R. Gomez Carrion, Felipe de Mendiburo</em></h4>
-<h4 class="date"><em>2017-06-19</em></h4>
-
+<div id="graphics-1" class="section level1">
+<h1><span class="header-section-number">8</span> Graphics</h1>
+<p>En la herramienta <strong>Graphics</strong> te permite traer de <strong>Stadistic</strong> lo analizado para representarlo graficamente. Aqui las herramientas:</p>
+<p><em>Ylabel</em>, <em>Xlabel</em>, y <em>Legend</em> te permitirá dar forma a los rotulos de tus ejes de ordenadas, abscisas y leyenda respectivamente; manteniendo los mismos criterios de escritura vistas en el capitulo <strong>Outliers</strong> para la construcción de los rotulos.</p>
+<p>Si se desea mantenerlos en blanco, arrastrará la informacion de las cabeceras con el que se contruyo en <strong>tools</strong> la libreta de campo.</p>
+<div class="figure">
+<img src="img/g02.png" alt="Representación grafica, manteniendo los rotulos de la libreta de campo. " />
+<p class="caption"><strong>Representación grafica, manteniendo los rotulos de la libreta de campo. </strong></p>
 </div>
-<div id="que-es-fieldbook" class="section level1">
-<h1><span class="header-section-number">1</span> ¿Qué es fieldbook?</h1>
-<p><strong>FieldBook</strong> es una aplicación de servicio estadístico <em>online</em> multiplataforma de interfaz amigable, intuitiva, y óptima; que busca ágilizar el desarrollo y validación de productos en las organizaciones inmersas en el sector Agropecuario e industrial, en el que normalmente de desarrollan experimentos en pro de la mejora de un producto o servicio.</p>
-<p>El uso de la plataforma es diversa, pero hace énfasis en el sector agropecuario donde normalmente necesitamos evaluar la Letalidad de un nuevo insumo para controlar una plaga o enfermedad, ya sea este producto sintético u orgánico, realizar pruebas de comparación de varios tipos de fertilizantes-enmiendas; el ingreso de variedades mejoradas, necesariamente deben de ser validados estadísticamente. Sin embargo, ello no quita su aplicación en otras áreas; como el comparar el rendimiento de nuevas baterias de celulares a climas extemos, por poner un ejemplo.</p>
-<p><strong>FieldBook</strong> es soporte para todos los trabajos antes mencionados y más, ellos deben de iniciar con la construcción de la libreta de campo. Es decir, la plataforma permite personalizar tu libreta (de campo) de acuerdo al diseño experimental que empleará, las varibles que analizará, las repeticiones que tendrá, etc.</p>
-<p>Una vez construida la libreta la podrás exportar e formato <em>.cvs ó .xlsx</em> para la colecta de datos, esta misma libreta será importada a la plataforma y siguiendo una ruta lógica recurrente vizualizarás en tiempo real la distribución de los datos, el nivel de correlación, comparación de medias, entre otras pruebas.</p>
-<p>Bienvenido al fascinante mundo de la innovación científica, nunca ántes el poder de las estadísticas a han estado <strong>a un clic de transformar los datos en conocimiento.</strong></p>
-<p><img src="img/canvas.png" width="404" style="display: block; margin: auto;" /></p>
+<p>Al pie de cada cuadro en azul, verde y rojo, tenemos <em>brakes</em>. En azul para definir el punto de partida del eje de las ordenas, el cual solo se habilita con el grafico de lineas.</p>
+<p>En <em>brake text</em> permite modificar el los rotulos de los subfactores, dando dos espacios entre cada nombre del subfactor.</p>
+<p>Del ejemplo, se desea cambiar: “inoculado” y “noinoculado”,por: enfermo sano es decir: enfermo(.<em>.</em>)sano</p>
+<p>Y para los niveles de huesped (Legend): “Antillano”, “Mexicano”, “Nabal”, y “Zutano”, se desea cambiar por: G1 G2 g3 g4 es decir: G1(.<em>.</em>)G2(.<em>.</em>)g3(.<em>.</em>)g4 *._ es la representacion grafica de un pulso sobre la barra espaciadora de l teclado. Si solo se da un solo espacio(._) No saltara a cambiar el nombre del otro subnivel, y por defecto imprimira “N.A”.</p>
+<div class="figure">
+<img src="img/g01.png" alt="Representación grafica, modificando los rotulos. " />
+<p class="caption"><strong>Representación grafica, modificando los rotulos. </strong></p>
+</div>
+<p>Note como el orden en el que se ingresan los factores en <strong>Stadistic</strong> es importante. Para cambiar el orden de los factores debe de regresar a <strong>Stadistic</strong> y seleccionar primero a factor que se quiere representar en el eje de la abscisas (huesped) y luego el otro factor representado como grafico de barras (patogeno). El primer factor siempre refleja el eje de las abscisas.</p>
+<div class="figure">
+<img src="img/gfactors.png" alt="El primer factor seleccionado, se representará en el eje de las abscisas" />
+<p class="caption"><strong>El primer factor seleccionado, se representará en el eje de las abscisas</strong></p>
+</div>
+<p>El siguiente grafico refleja mejor el comportamiento de los individuos evaluados a la variable longitud de raiz. Esta grafica mejor el proposito del investigador, el cual es distinguir el comportamiento de los individuos.</p>
+<div class="figure">
+<img src="img/g03.png" alt="cambio en el eje de la abscisas." />
+<p class="caption"><strong>cambio en el eje de la abscisas.</strong></p>
+</div>
+<p>Las modificaciones a los rotulos se hace del mismo modo que en el capitulo <strong>Outliers</strong>. La caja de herraminetas que se muestra al lado izquierdo permite:</p>
+<p><strong>Size:</strong> El tamano por defecto es <strong>2</strong>, se recomienda descargarlo en <strong>1</strong> para una mejor resolucion en la impresion.</p>
+<p><strong>Type:</strong> Se presentan dos tipos de graficos de <em>lineas</em> y de <em>barras</em>. Cuando seleccionas <em>line</em> puedes hacer uso en <em>Ylabel</em> las funciones <em>Limit(i)</em> y <em>Limit(f)</em> para modificar el eje de la ordenadas.</p>
+<p><strong>Color:</strong> Se muestra la graficas en blanco y negro, y a color.</p>
+<p><strong>Significance:</strong> Muestra la significancia representada por letras.</p>
+<p><strong>Error:</strong> Mostrar la barra de error.</p>
+<p><strong>Lenged:</strong> Muestra la ubicación del rotulo de la leyenda, <em>none</em>, <em>left</em>, <em>rigth</em>, <em>top</em> y <em>bottom</em>.</p>
+<p><strong>Heigth(mm)</strong> y <strong>Width(mm):</strong> Es la altura y el ancho de la figura a imprimir.</p>
+<p><strong>TIFF(300ppi):</strong> Es el formato (del grafico) requerido para la divulgacion cientifica.</p>
+<div class="figure">
+<img src="img/gg.png" alt="cambio en el eje de la abscisas." />
+<p class="caption"><strong>cambio en el eje de la abscisas.</strong></p>
+</div>
+<p>Se recalca una vez mas, el buen juicio del investigador. Para este ejemplo, es importante tener la representación grafica de la todas la evaluaciones en el tiempo y como se comportan los individuos con el patogeno (<em>inoculado</em> y <em>noinoculado</em>),</p>
+<p>Entonce, deberemos volver a <strong>Stadistic</strong>, y el primer factor que se debe ingresar es: evaluaciones seguido de los individuos evaluados (<em>huesped</em>), como se muestra a continuacion:</p>
+<div class="figure">
+<img src="img/e_h.png" alt="Stadistci: Evaluacion - huesped " />
+<p class="caption"><strong>Stadistci: Evaluacion - huesped </strong></p>
+</div>
+<p>Seleccionamos el <strong>graphic</strong> - <strong>Type</strong> - <strong>line</strong> para una representación con grafico de lineas, vale señalar que la grafica se ha construido sobre el promedio de factor <strong>patogeno</strong>.</p>
+<div class="figure">
+<img src="img/g_eva.png" alt="Evaluación en el tiempo." />
+<p class="caption"><strong>Evaluación en el tiempo.</strong></p>
+</div>
+<p>Si se desea hacer un disgregación más minusiosa, podemos usar la herramienta <strong>Filter</strong> de <strong>FieldBook</strong> y seleccionar en filtro el factor <em>patogeno</em> y como subfactor <em>inoculado</em> para su analisis y represenación grafica, como se muestra a continuación.</p>
+<div class="figure">
+<img src="img/inoculados_eva.png" alt="Evaluación en el tiempo. Solamente de los inoculados" />
+<p class="caption"><strong>Evaluación en el tiempo. Solamente de los inoculados</strong></p>
+</div>
 
 </div>
             </section>
@@ -138,8 +175,8 @@
           </div>
         </div>
       </div>
+<a href="statistic.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="descripcion-de-la-interface.html" class="navigation navigation-next navigation-unique" aria-label="Next page""><i class="fa fa-angle-right"></i></a>
 
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
@@ -167,7 +204,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/Flavjack/fieldbook-usm/blob/master/index.Rmd",
+"link": "https://github.com/Flavjack/fieldbook-usm/blob/master/graphs.rmd",
 "text": "Edit"
 },
 "download": null,

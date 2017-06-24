@@ -6,8 +6,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Fieldbook application user manual</title>
-  <meta name="description" content="User manual to use fieldbook aplication for statistical analysis.">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Book for learn how to use fieldbook aplication for statistical analysis.">
+  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
 
   <meta property="og:title" content="Fieldbook application user manual" />
   <meta property="og:type" content="book" />
@@ -22,18 +24,20 @@
   <meta name="twitter:description" content="User manual to use fieldbook aplication for statistical analysis." />
   <meta name="twitter:image" content="https://flavjack.github.io/fieldbook-usm/img/cover.png" />
 
-<meta name="author" content="Flavio Lozano Isla, Jimmy R. Gomez Carrion, Felipe de Mendiburo">
+
+<meta name="author" content="Flavio Lozano Isla, Jimmy Gomez Carrion, Felipe de Mendiburu">
 
 
-<meta name="date" content="2017-06-19">
+<meta name="date" content="2017-06-21">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="prev" href="multivariate.html">
-<link rel="next" href="graphics.html">
+<link rel="prev" href="regression-1.html">
+<link rel="next" href="graphics-1.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -56,7 +60,6 @@
 <body>
 
 
-
   <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
 
     <div class="book-summary">
@@ -66,26 +69,31 @@
 <li> <a href="./">Fieldbook User Manual</a> </li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Objectivo de fieldbook</a></li>
-<li class="chapter" data-level="2" data-path="descripcion-de-interface.html"><a href="descripcion-de-interface.html"><i class="fa fa-check"></i><b>2</b> Descripción de Interface</a><ul>
-<li class="chapter" data-level="2.1" data-path="descripcion-de-interface.html"><a href="descripcion-de-interface.html#aplication"><i class="fa fa-check"></i><b>2.1</b> Aplicatión</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> ¿Qué es fieldbook?</a></li>
+<li class="chapter" data-level="2" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html"><i class="fa fa-check"></i><b>2</b> Descripción de la Interface</a><ul>
+<li class="chapter" data-level="2.1" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#fieldbook"><i class="fa fa-check"></i><b>2.1</b> FieldBook</a></li>
+<li class="chapter" data-level="2.2" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#importdata"><i class="fa fa-check"></i><b>2.2</b> Importdata</a></li>
+<li class="chapter" data-level="2.3" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#outliers"><i class="fa fa-check"></i><b>2.3</b> Outliers</a></li>
+<li class="chapter" data-level="2.4" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#multivariante"><i class="fa fa-check"></i><b>2.4</b> Multivariante</a></li>
+<li class="chapter" data-level="2.5" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#regression"><i class="fa fa-check"></i><b>2.5</b> Regression</a></li>
+<li class="chapter" data-level="2.6" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#stadistics"><i class="fa fa-check"></i><b>2.6</b> Stadistics</a></li>
+<li class="chapter" data-level="2.7" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#graphics"><i class="fa fa-check"></i><b>2.7</b> Graphics</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>3</b> Tools</a><ul>
-<li class="chapter" data-level="3.1" data-path="tools.html"><a href="tools.html#caso-practico"><i class="fa fa-check"></i><b>3.1</b> Caso practico</a></li>
-<li class="chapter" data-level="3.2" data-path="tools.html"><a href="tools.html#tools-1"><i class="fa fa-check"></i><b>3.2</b> Tools</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="tools.html"><a href="tools.html#buenas-practicas"><i class="fa fa-check"></i><b>3.2.1</b> Buenas prácticas</a></li>
+<li class="chapter" data-level="3" data-path="fieldbook-1.html"><a href="fieldbook-1.html"><i class="fa fa-check"></i><b>3</b> FieldBook</a><ul>
+<li class="chapter" data-level="3.1" data-path="fieldbook-1.html"><a href="fieldbook-1.html#datos-estructurados"><i class="fa fa-check"></i><b>3.1</b> Datos estructurados</a></li>
+<li class="chapter" data-level="3.2" data-path="fieldbook-1.html"><a href="fieldbook-1.html#diseno-experimental."><i class="fa fa-check"></i><b>3.2</b> Diseño Experimental.</a></li>
+<li class="chapter" data-level="3.3" data-path="fieldbook-1.html"><a href="fieldbook-1.html#nota-importante"><i class="fa fa-check"></i><b>3.3</b> Nota importante</a></li>
 </ul></li>
+<li class="chapter" data-level="4" data-path="outliers-1.html"><a href="outliers-1.html"><i class="fa fa-check"></i><b>4</b> Outliers</a></li>
+<li class="chapter" data-level="5" data-path="multivariate.html"><a href="multivariate.html"><i class="fa fa-check"></i><b>5</b> Multivariate</a><ul>
+<li class="chapter" data-level="5.1" data-path="multivariate.html"><a href="multivariate.html#correlation"><i class="fa fa-check"></i><b>5.1</b> correlation</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="multivariate.html"><a href="multivariate.html#colors-html"><i class="fa fa-check"></i><b>5.1.1</b> colors HTML</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="fieldbook.html"><a href="fieldbook.html"><i class="fa fa-check"></i><b>4</b> FieldBook</a></li>
-<li class="chapter" data-level="5" data-path="outliers.html"><a href="outliers.html"><i class="fa fa-check"></i><b>5</b> outliers</a></li>
-<li class="chapter" data-level="6" data-path="multivariate.html"><a href="multivariate.html"><i class="fa fa-check"></i><b>6</b> Multivariate</a><ul>
-<li class="chapter" data-level="6.1" data-path="multivariate.html"><a href="multivariate.html#correlation"><i class="fa fa-check"></i><b>6.1</b> correlation</a><ul>
-<li class="chapter" data-level="6.1.1" data-path="multivariate.html"><a href="multivariate.html#colors-html"><i class="fa fa-check"></i><b>6.1.1</b> colors HTML</a></li>
+<li class="chapter" data-level="5.2" data-path="multivariate.html"><a href="multivariate.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>5.2</b> Analisis de componentes principales</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="multivariate.html"><a href="multivariate.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>6.2</b> Analisis de componentes principales</a></li>
-</ul></li>
+<li class="chapter" data-level="6" data-path="regression-1.html"><a href="regression-1.html"><i class="fa fa-check"></i><b>6</b> Regression</a></li>
 <li class="chapter" data-level="7" data-path="statistic.html"><a href="statistic.html"><i class="fa fa-check"></i><b>7</b> Statistic</a></li>
-<li class="chapter" data-level="8" data-path="graphics.html"><a href="graphics.html"><i class="fa fa-check"></i><b>8</b> Graphics</a></li>
+<li class="chapter" data-level="8" data-path="graphics-1.html"><a href="graphics-1.html"><i class="fa fa-check"></i><b>8</b> Graphics</a></li>
 <li class="divider"></li>
 <li><a href="http://ec2-54-186-118-40.us-west-2.compute.amazonaws.com:3838/sample-apps/fieldbookpass/">FieldBook app</a></li>
 
@@ -110,7 +118,7 @@
 <h1><span class="header-section-number">7</span> Statistic</h1>
 <p>Esta es un plataforma de calculos estadistístico, reposa sobre el investigador su correcto uso.</p>
 <p>En <strong>Response</strong> seleccionamos la variable respuesta que deseamos analizar.</p>
-<p>En <strong>Block</strong> dependiendo del diseño estadistico seleccionar el bloque, o del criterio del investigador alguna columna que quiera aislar de manera particular.</p>
+<p>En <strong>Block</strong> dependiendo del diseño estadístico seleccionar el bloque, o del criterio del investigador alguna columna que quiera aislar de manera particular.</p>
 <p>En <strong>Factors</strong> seleccionar el los tratamientos o factores.</p>
 <p>En <strong>Significance</strong> esta predefinido con un nivel de significancia del 5%, pero este también queda a criterio del investigador.</p>
 <p>En <strong>Type</strong> se presenta el tipo de prueba: <em>Tukey</em>, <em>Duncan</em> y <em>Snk (Student Newman Keuls)</em></p>
@@ -132,10 +140,9 @@
           </div>
         </div>
       </div>
-<a href="multivariate.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="graphics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
-  </div>
+<a href="regression-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="graphics-1.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
