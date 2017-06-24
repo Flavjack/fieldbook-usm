@@ -5,7 +5,7 @@ Esta es un plataforma de calculos estadistístico, reposa sobre el investigador 
 
 En **Response** seleccionamos la variable respuesta que deseamos analizar.
 
-En **Block** dependiendo del diseño estadistico seleccionar el bloque, o del criterio del investigador alguna columna que quiera aislar de manera particular.
+En **Block** dependiendo del diseño estadístico seleccionar el bloque, o del criterio del investigador alguna columna que quiera aislar de manera particular.
 
 En **Factors** seleccionar el los tratamientos o factores.
 

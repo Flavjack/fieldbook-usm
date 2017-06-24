@@ -1,27 +1,29 @@
-# outliers
+# Outliers
 
-Aquí se visualizan los valores atípicos, y permite al investigador tomar desiciones, como realizar una transfomación de datos o suprimir valores atípicos.
+Aquí se visualizan los valores atípicos, y permite al investigador tomar desiciones, como realizar una transfomación de datos ó suprimir valores atípicos.
 
-Para nuestro ejemplo, en **Response** seleccionamos la variable respuesta del desplegable y al pie **Ylabel** escribiremos el rótulo del eje de la ordenadas. 
+Para nuestro ejemplo, en **Response** seleccionar la variable respuesta del desplegable y al pie **Ylabel** escribiremos el rótulo del eje de la ordenadas, se coloca el rótulo de las ordenadas, el cual permite  notacion cientifica y  simbología no permitida siempre y cuando, vaya entre comillas (" "). 
 
-    Aqu? se coloca el rotulo de las ordenas en cual permite  notacion cientifica y  simbolog?a no permitida siempre y cuando, vaya entre comillas (""). Ver ejemplo: Damage ("%")     escribira      Damage (%)
+Por ejemplo: **Damage ("%")**   imprimirá      **Damage (%)**
 
-Con el mismo criterio escogeremos uno de los factores (_Treatment_) en **Axis X**. Para nuestro ejemplo deseamos mostrar en el eje de las abscisas los Huespedes de la enfermedad y sobre el plano cartesiano **(Grouped)** el _patogeno_ con sus dos subfactores: _inoculado_ y _noinoculado_.
+Con el mismo criterio escogeremos uno de los factores en **Axis X**. Para nuestro ejemplo deseamos mostrar en el eje de las abscisas los Huespedes de la enfermedad y sobre el plano cartesiano **(Grouped)** el _patogeno_ con sus dos subfactores: _inoculado_ y _noinoculado_.
 
-![**outliers. Selector de tratamientos, rotulos y escala **  ](img/006_outliers.png)
+![**outliers. Selector de tratamientos, rótulos y escala **  ](img/006_outliers.png)
 
     Amarillo: Elegir la varaible respuesta que desea visulizar y su rótulo.
-    verde: Elegir el Tratamiento  a mostrar en el eje de la abscisas
+    verde: Elegir el Tratamiento  a mostrar en el eje de la abscisas.
     rojo: Elegir el Tratamiento  a mostrar en el plano cartesiano.  
-    Azul: Elegir la escala de los ejes y el tama?o de letra.  
+    Azul: Elegir la escala de los ejes y el tamaño de letra.  
 
-Ademas en **Ylabel** y **Xlabel** permite:
+Además en **Ylabel** y **Xlabel** permite escribir formulas como
 
-    Si desea escribir: 
-    La formula del agua: H[2] O  
-    La formula de kilómetros por hora: km. Hr^{-1} 
-    La concentracion de ácido sulfúrico:"[" SO[4] .H[2] "]"
-    *IMPORTANTE: Terminado de escribir el rotulo NO dejar espacio en blanco.
+  La formula del agua: **H[2] O  **
+  
+  La formula de kilómetros por hora: **km. Hr^{-1} **
+  
+  La concentracion de ácido sulfúrico:**"[" SO[4] .H[2] "]"**
+  
+  *IMPORTANTE: Terminado de escribir el rotulo NO dejar espacio en blanco.
 
 Ahora, elegimos otra variable respuesta:
 
@@ -33,6 +35,4 @@ Otro forma de presentar la misma variable es la siguiente:
 
 ![**outliers. Response: LengthRootKm.  AxisX: huesped**   ](img/006_1outliers.png)
 
-Queda a criterio del invesigador la mejor manera de presentar sus datos, siempre procuparando que esta sea la más legible de la formas.
-
-    Finalmente debemos precisar que para estas imagenes, hay tres puntos rojos (flecha azul) estos son los datos fuera de tipo (outliers), aumentando la desviación estandar.
+Finalmente debemos precisar que para estas imagenes, hay tres puntos rojos (flecha azul) estos son los datos fuera de tipo (outliers), el cual en consecuencia aumenta el coeficiente de variabilidad.

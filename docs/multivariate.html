@@ -6,8 +6,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Fieldbook application user manual</title>
-  <meta name="description" content="User manual to use fieldbook aplication for statistical analysis.">
-  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="Book for learn how to use fieldbook aplication for statistical analysis.">
+  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
+
 
   <meta property="og:title" content="Fieldbook application user manual" />
   <meta property="og:type" content="book" />
@@ -22,18 +25,26 @@
   <meta name="twitter:description" content="User manual to use fieldbook aplication for statistical analysis." />
   <meta name="twitter:image" content="https://flavjack.github.io/fieldbook-usm/img/cover.png" />
 
+
+<meta name="author" content="Flavio Lozano Isla, Jimmy Gomez Carrion, Felipe de Mendiburu">
+
+
+<meta name="date" content="2017-06-21">
+
 <meta name="author" content="Flavio Lozano Isla, Jimmy R. Gomez Carrion, Felipe de Mendiburo">
 
 
 <meta name="date" content="2017-06-19">
+
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="prev" href="outliers.html">
-<link rel="next" href="statistic.html">
+<link rel="prev" href="outliers-1.html">
+<link rel="next" href="regression-1.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -56,7 +67,6 @@
 <body>
 
 
-
   <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
 
     <div class="book-summary">
@@ -66,26 +76,31 @@
 <li> <a href="./">Fieldbook User Manual</a> </li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Objectivo de fieldbook</a></li>
-<li class="chapter" data-level="2" data-path="descripcion-de-interface.html"><a href="descripcion-de-interface.html"><i class="fa fa-check"></i><b>2</b> Descripción de Interface</a><ul>
-<li class="chapter" data-level="2.1" data-path="descripcion-de-interface.html"><a href="descripcion-de-interface.html#aplication"><i class="fa fa-check"></i><b>2.1</b> Aplicatión</a></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> ¿Qué es fieldbook?</a></li>
+<li class="chapter" data-level="2" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html"><i class="fa fa-check"></i><b>2</b> Descripción de la Interface</a><ul>
+<li class="chapter" data-level="2.1" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#fieldbook"><i class="fa fa-check"></i><b>2.1</b> FieldBook</a></li>
+<li class="chapter" data-level="2.2" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#importdata"><i class="fa fa-check"></i><b>2.2</b> Importdata</a></li>
+<li class="chapter" data-level="2.3" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#outliers"><i class="fa fa-check"></i><b>2.3</b> Outliers</a></li>
+<li class="chapter" data-level="2.4" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#multivariante"><i class="fa fa-check"></i><b>2.4</b> Multivariante</a></li>
+<li class="chapter" data-level="2.5" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#regression"><i class="fa fa-check"></i><b>2.5</b> Regression</a></li>
+<li class="chapter" data-level="2.6" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#stadistics"><i class="fa fa-check"></i><b>2.6</b> Stadistics</a></li>
+<li class="chapter" data-level="2.7" data-path="descripcion-de-la-interface.html"><a href="descripcion-de-la-interface.html#graphics"><i class="fa fa-check"></i><b>2.7</b> Graphics</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>3</b> Tools</a><ul>
-<li class="chapter" data-level="3.1" data-path="tools.html"><a href="tools.html#caso-practico"><i class="fa fa-check"></i><b>3.1</b> Caso practico</a></li>
-<li class="chapter" data-level="3.2" data-path="tools.html"><a href="tools.html#tools-1"><i class="fa fa-check"></i><b>3.2</b> Tools</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="tools.html"><a href="tools.html#buenas-practicas"><i class="fa fa-check"></i><b>3.2.1</b> Buenas prácticas</a></li>
+<li class="chapter" data-level="3" data-path="fieldbook-1.html"><a href="fieldbook-1.html"><i class="fa fa-check"></i><b>3</b> FieldBook</a><ul>
+<li class="chapter" data-level="3.1" data-path="fieldbook-1.html"><a href="fieldbook-1.html#datos-estructurados"><i class="fa fa-check"></i><b>3.1</b> Datos estructurados</a></li>
+<li class="chapter" data-level="3.2" data-path="fieldbook-1.html"><a href="fieldbook-1.html#diseno-experimental."><i class="fa fa-check"></i><b>3.2</b> Diseño Experimental.</a></li>
+<li class="chapter" data-level="3.3" data-path="fieldbook-1.html"><a href="fieldbook-1.html#nota-importante"><i class="fa fa-check"></i><b>3.3</b> Nota importante</a></li>
 </ul></li>
+<li class="chapter" data-level="4" data-path="outliers-1.html"><a href="outliers-1.html"><i class="fa fa-check"></i><b>4</b> Outliers</a></li>
+<li class="chapter" data-level="5" data-path="multivariate.html"><a href="multivariate.html"><i class="fa fa-check"></i><b>5</b> Multivariate</a><ul>
+<li class="chapter" data-level="5.1" data-path="multivariate.html"><a href="multivariate.html#correlation"><i class="fa fa-check"></i><b>5.1</b> correlation</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="multivariate.html"><a href="multivariate.html#colors-html"><i class="fa fa-check"></i><b>5.1.1</b> colors HTML</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="fieldbook.html"><a href="fieldbook.html"><i class="fa fa-check"></i><b>4</b> FieldBook</a></li>
-<li class="chapter" data-level="5" data-path="outliers.html"><a href="outliers.html"><i class="fa fa-check"></i><b>5</b> outliers</a></li>
-<li class="chapter" data-level="6" data-path="multivariate.html"><a href="multivariate.html"><i class="fa fa-check"></i><b>6</b> Multivariate</a><ul>
-<li class="chapter" data-level="6.1" data-path="multivariate.html"><a href="multivariate.html#correlation"><i class="fa fa-check"></i><b>6.1</b> correlation</a><ul>
-<li class="chapter" data-level="6.1.1" data-path="multivariate.html"><a href="multivariate.html#colors-html"><i class="fa fa-check"></i><b>6.1.1</b> colors HTML</a></li>
+<li class="chapter" data-level="5.2" data-path="multivariate.html"><a href="multivariate.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>5.2</b> Analisis de componentes principales</a></li>
 </ul></li>
-<li class="chapter" data-level="6.2" data-path="multivariate.html"><a href="multivariate.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>6.2</b> Analisis de componentes principales</a></li>
-</ul></li>
+<li class="chapter" data-level="6" data-path="regression-1.html"><a href="regression-1.html"><i class="fa fa-check"></i><b>6</b> Regression</a></li>
 <li class="chapter" data-level="7" data-path="statistic.html"><a href="statistic.html"><i class="fa fa-check"></i><b>7</b> Statistic</a></li>
-<li class="chapter" data-level="8" data-path="graphics.html"><a href="graphics.html"><i class="fa fa-check"></i><b>8</b> Graphics</a></li>
+<li class="chapter" data-level="8" data-path="graphics-1.html"><a href="graphics-1.html"><i class="fa fa-check"></i><b>8</b> Graphics</a></li>
 <li class="divider"></li>
 <li><a href="http://ec2-54-186-118-40.us-west-2.compute.amazonaws.com:3838/sample-apps/fieldbookpass/">FieldBook app</a></li>
 
@@ -107,21 +122,22 @@
 
             <section class="normal" id="section-">
 <div id="multivariate" class="section level1">
-<h1><span class="header-section-number">6</span> Multivariate</h1>
-<p>En <strong>Multivariate</strong> tenemos dos presentaciones de las variables respuestas evaluadas. <strong>Correlation</strong> y <strong>analisis de componentes principales (pca)</strong> ambos con sus respectivos graficos. estos nos permitira reconocer la correlacion de las variables y simplificar un problema complejo, a criterio del investigador.</p>
+<h1><span class="header-section-number">5</span> Multivariate</h1>
+<p>En <strong>Multivariate</strong> tenemos dos presentaciones de las variables respuestas. <strong>Correlation</strong> de Pearson y <strong>PCA</strong> (Ánalisis de componentes principales) ambos con sus respectivos gráficos. Estos nos permite conocer el grado de correlacion de las variables y el agrupamiento de los datos.</p>
 <div class="figure">
 <img src="img/007_0multivariante.png" alt="correlation y pca" />
 <p class="caption"><strong>correlation y pca</strong></p>
 </div>
 <div id="correlation" class="section level2">
-<h2><span class="header-section-number">6.1</span> correlation</h2>
-<p>En el cuadro de la izquierda <strong>Correlation</strong> muestra el grado de <strong>Significance</strong>, por defecto se trabaja con un grado de significancia igual al 5%, en el desplegable se puede cambiar el nivel de significancia.</p>
-<p>La <strong>Correlation</strong> permite conocer el grado de relacion que tiene cada variable respuesta respecto a la otra, en un rango de <strong>+1 a -1</strong>, si el valor absoluto de la correlacion es cercano a <strong>1</strong> indica que presenta una <em>magnitud</em> relación muy estrecha, y el signo es positivo o negativo indica que es una relación directa o inversa, respectivamente.</p>
-<p>En <strong>Font</strong> se puede escoger el tamaño de fuente, el cual por defecto es <strong>1</strong> es el tamaño de fuente más apropiado si se desea copiar la imagen para imprimir. Por último, <strong>color</strong>, en este se colocaran los colores HTML de su preferencia separados por un espacio para representar dicha correlacion, notar que el orden como se ingresan los codigos de colores HTML es importante.</p>
+<h2><span class="header-section-number">5.1</span> correlation</h2>
+<p>En el cuadro de la izquierda <strong>Correlation</strong> de Pearson muestra el grado de <strong>Significance</strong>. Por defecto se trabaja con un grado de significancia igual al 5%, pero en el desplegable se puede elegir el nivel de significancia.</p>
+<p>La <strong>Correlation</strong> permite conocer el grado de relacion que tiene cada variable respuesta respecto a la otra, en un rango de <strong>+1 a -1</strong>, si el valor absoluto de la correlación es cercano a <strong>1</strong> indica que presenta una <em>magnitud</em> relación muy estrecha, y el signo es positivo o negativo indica que es una relación directa o inversa, respectivamente.</p>
+<p>En <strong>Font</strong> se puede escoger el tamaño de fuente, el cual por defecto es <strong>1</strong> es el tamaño de fuente más apropiado si se desea copiar la imagen para imprimir. Por último, <strong>color</strong>, en este se colocaran los colores HTML de su preferencia separados por un espacio para representar dicha correlación, notar que el orden como se ingresan los códigos de colores HTML es importante.</p>
 <div id="colors-html" class="section level3">
-<h3><span class="header-section-number">6.1.1</span> colors HTML</h3>
-<p>Para un mejor empleo de los colores HTML en <strong>Multivariate</strong>, se debera colocar los <strong>colores HTML</strong> o llamar a los colores primarios por su nombre, como: <em>yellow</em> <em>red</em> <em>green</em> <em>blue</em> <em>orange</em> <em>black</em> <em>gray</em> <em>white</em>.</p>
-<p>Una forma practica de obtener el codigo es usando un <strong>eyes dropper</strong>, una vez instalado en su navegador, ingresar al <strong>color picker</strong>. Copiar el codigo del color y pegar sobre <strong>Multivariate - correlation - color</strong>, como se muestran en los circulos.</p>
+<h3><span class="header-section-number">5.1.1</span> colors HTML</h3>
+<p>Para un mejor empleo de los colores HTML en <strong>Multivariate</strong>, se debera colocasr los <strong>colores HTML</strong> o llamar a los colores primarios por su nombre, como:</p>
+<p><em>yellow</em>, <em>red</em>, <em>green</em>, <em>blue</em>, <em>orange</em>, <em>black</em>, <em>gray</em>, <em>white</em>.</p>
+<p>Una forma practica de obtener el código de color HTLM es usando un <strong>eyes dropper</strong>, una vez instalado en su navegador, ingresar al <strong>color picker</strong>. Copiar el cÓdigo del color como señala el elipse.</p>
 <div class="figure">
 <img src="img/colors_picker.png" alt="colors HTML, eyes dropper. En rojo: cuenta gotas. En verde: copiar codigo de color" />
 <p class="caption"><strong>colors HTML</strong>, eyes dropper. <strong>En rojo:</strong> cuenta gotas. <strong>En verde:</strong> copiar codigo de color</p>
@@ -135,23 +151,22 @@
 </div>
 </div>
 <div id="analisis-de-componentes-principales" class="section level2">
-<h2><span class="header-section-number">6.2</span> Analisis de componentes principales</h2>
-<p>En el analisis de los componentes principales (PCA), se tiene el desplegable <strong>Type</strong> donde se presenta <em>biplot</em>, <em>var</em> e <em>ind</em>; y junto a <strong>Variable</strong>, se puede escoger el plano que mejor grafique el proposito del investigador, con la combinacion de estos.</p>
-<p><strong>PCA- Type</strong> permite encoger <em>var</em> el que representa la correlacion de las variables respuestas en una grafica simple de radio = <strong>1</strong>. El cual tienen el mismo marco conceptual que <strong>Corretation</strong> visto lineas arribas, pero en esta ocacion en una representación grafica.</p>
+<h2><span class="header-section-number">5.2</span> Analisis de componentes principales</h2>
+<p>En el analisis de los componentes principales (PCA), se tiene el desplegable <strong>Type</strong> donde se presenta <em>biplot</em>, <em>var</em> e <em>ind</em>; y junto a <strong>Variable</strong>, se puede escoger el plano que mejor grafique el proposito, ó la combinacion de estos.</p>
+<p><strong>PCA- Type</strong> permite encoger <em>var</em> el que representa la correlacion de las variables respuestas en una grafica simple de radio = <strong>1</strong>. El cual tienen el mismo marco conceptual que <strong>Correlation</strong> visto lineas arribas, pero en representación grafica y la variable de agrupamiento.</p>
 <p>La variable respuestas poseen una <em>magnitud</em> y <em>direccion</em> respecto a los cuadrantes del plano cartesiano.</p>
 <pre><code>Para el ejemplo observamos que se mueven una dirección opuesta (relacion inversa) y magnitud cercano a cercana a &quot;1&quot; (una correlaciin alta) entre Damage y LengthRootKm. Al investigador le interesan particularmente estas dos variables, puesto se esta estudiando la damage que causa un patogeno a las raices, es prioritario centrar su atención sobre los sintomas primarios (el deterioro de la raices).  </code></pre>
 <div class="figure">
 <img src="img/damage_length.png" alt="Relacion Damage y LengthRootKm inoculado y noinoculado (control)" />
 <p class="caption"><strong>Relacion Damage y LengthRootKm</strong> <em>inoculado</em> y <em>noinoculado</em> (control)</p>
 </div>
-<p>En la herramienta <strong>Tools</strong> se construyo la libreta de campo y el orden como se contruye la columna: repetecion, bloque, factores y variables, es importante a la hora de escoger en <strong>Multivariate - PCA - Variable</strong>,la columna que vas a representar.</p>
-<pre><code>Para el ejemplo, cuando elegimos en varible 2, elegimos  la columna 2, que   representa a las evaluaciones por lo que en la leyenda iran las evaluaciones con su respectivo color, y en label, tiene la oportunidad de cambiar el rotulo de la columna, puede cambiar eva  por Evaluacion.</code></pre>
+<p>En el item <strong>FieldBook</strong> se construyó la libreta de campo y el orden como se contruye la columna: repetición, bloque, factores y variables, es importante a la hora de escoger en <strong>Multivariate - PCA - Variable</strong>,la columna que va a representar.</p>
+<pre><code>Para el ejemplo, cuando elige la varible 2, elige la columna 2, que representa a las evaluaciones por lo que en la leyenda irá las evaluaciones con su respectivo color, y en label, tiene la oportunidad de cambiar el rótulo de la columna, puede cambiar eva  por Evaluación, por ejemplo.</code></pre>
 <div class="figure">
 <img src="img/007_02multivariante.png" alt="PCA Los ejes en gris representan el % de variación de la variancia para cada componente." />
 <p class="caption"><strong>PCA</strong> <em>Los ejes en gris</em> representan el % de variación de la <em>variancia</em> para cada componente.</p>
 </div>
-<pre><code>  Dando sobre el desplegable &quot;Varaible&quot;&quot;, hasta la  columna 3, el que representa  al  patogeno   por consecuencia aparece como rotulo en la leyenda, y se puede apreciar que en la grafica se separa la columna  patogeno (inoculado    y   noinoculado). Si deseamos cambiar el rotulo de la leyenda, escribir en &quot;Label&quot; el nombre de su preferencia.  </code></pre>
-<p>Es criterio del investigador tomar la columna que mejor se ajuste a sus necesidades.</p>
+<pre><code> &lt;El análisis de componentes principales suele ser muy utilizanda cuando se desea relacionar la presencia de un especie de cuerdo al habitat, por poner un ejemplo&gt;</code></pre>
 <div class="figure">
 <img src="img/007_multivariante.png" alt="Correlation y Analisis de componentes principales" />
 <p class="caption"><strong>Correlation y Analisis de componentes principales</strong></p>
@@ -165,10 +180,9 @@
           </div>
         </div>
       </div>
-<a href="outliers.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="statistic.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
-    </div>
-  </div>
+<a href="outliers-1.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="regression-1.html" class="navigation navigation-next " aria-label="Next page""><i class="fa fa-angle-right"></i></a>
+
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>

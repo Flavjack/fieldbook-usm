@@ -3,20 +3,14 @@ title: Fieldbook application user manual
 author: 'Flavio Lozano Isla, Jimmy R. Gomez Carrion, Felipe de Mendiburo'
 description: User manual to use fieldbook aplication for statistical analysis.
 date: '`r Sys.Date()`'
-url: https\://flavjack.github.io/fieldbook-usm/
-github-repo: flavjack/fieldbook-usm
 cover-image: img/cover.png
-favicon: img/favicon.ico
-site: bookdown::bookdown_site
+description: Book for learn how to use fieldbook aplication for statistical analysis.
 documentclass: book
-bookdown::gitbook:
-#output: word_document
-# link-citations: yes
-# colorlinks: yes
-# bibliography:
-# - book.bib
-# - packages.bib
-# csl: iica-catie.csl
+favicon: img/favicon.ico
+github-repo: flavjack/fieldbook-usm
+site: bookdown::bookdown_site
+bookdown::gitbook: null
+url: https\://flavjack.github.io/fieldbook-usm/
 ---
 
 ```{r setup, include=FALSE}
@@ -45,12 +39,21 @@ knitr::write_bib(c(
 ```
 
 
-# Objectivo de fieldbook
+# ¿Qué es  fieldbook?
 
-_FieldBook_ es una aplicacion _online_ que busca ser una herramienta de ayuda a toda persona que este interesado en utilizar las estadisticas como herramientas cotidianas en su vida académica, comercial y personal. Si esta herramienta te ayuda a reducir el tiempo en operaciones monotonas y pasar  directamente al análisis, la discusión e interpretación de tus resultados.
+**FieldBook** es una aplicación  de servicio estadístico _online_  multiplataforma de interfaz amigable, intuitiva, y óptima; que busca ágilizar el desarrollo y validación de productos en las organizaciones inmersas en el sector Agropecuario e industrial, en el que normalmente de desarrollan experimentos en pro de la mejora de un producto o servicio.
+
+El uso de la plataforma es diversa, pero hace énfasis en el sector agropecuario donde normalmente necesitamos evaluar la Letalidad de un nuevo insumo para controlar una plaga o enfermedad, ya sea este producto sintético u orgánico, realizar pruebas de comparación de varios tipos de fertilizantes-enmiendas; el ingreso de  variedades mejoradas, necesariamente deben de ser validados estadísticamente. Sin embargo, ello no quita su aplicación en otras áreas; como el comparar el rendimiento de nuevas baterias de celulares a climas extemos, por poner un ejemplo. 
+
+**FieldBook** es soporte para todos los trabajos antes mencionados y más, ellos deben de iniciar con la construcción de la libreta de campo. Es decir, la plataforma permite personalizar tu libreta (de campo) de acuerdo al diseño experimental que empleará, las varibles que analizará, las repeticiones que tendrá, etc.
+
+Una vez construida la libreta la podrás exportar e formato _.cvs ó .xlsx_ para la colecta de datos, esta misma libreta será importada a la plataforma y siguiendo una ruta lógica recurrente vizualizarás en tiempo real la distribución de los  datos, el nivel de correlación, comparación de medias, entre otras pruebas.
+
+Bienvenido al fascinante mundo de la innovación científica, nunca ántes el poder de las estadísticas a han estado **a un clic de transformar los datos en conocimiento.**
+
 
 ```{r, fig.align='center'}
-knitr::include_graphics("img/cover.jpg")
+knitr::include_graphics("img/canvas.png")
 ```
 
 
