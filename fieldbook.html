@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="generator" content="bookdown 0.4 and GitBook 2.6.7">
+
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li> <a href="./">Fieldbook User Manual</a> </li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path=""><a href="#fieldbook"><i class="fa fa-check"></i><b>1</b> FieldBook</a><ul>
+<li class="chapter" data-level="1.1" data-path=""><a href="#datos-estructurados"><i class="fa fa-check"></i><b>1.1</b> Datos estructurados</a></li>
+<li class="chapter" data-level="1.2" data-path=""><a href="#diseno-experimental."><i class="fa fa-check"></i><b>1.2</b> Diseño Experimental.</a></li>
+<li class="chapter" data-level="1.3" data-path=""><a href="#nota-importante"><i class="fa fa-check"></i><b>1.3</b> Nota importante</a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="http://ec2-54-186-118-40.us-west-2.compute.amazonaws.com:3838/sample-apps/fieldbookpass/">FieldBook app</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"></a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<!--bookdown:title:end-->
+<!--bookdown:title:start-->
+<div id="fieldbook" class="section level1">
+<h1><span class="header-section-number">1</span> FieldBook</h1>
+<p>FieldBook construye libretas de campo, el cual sigue un correcta estructuración de los datos para su posterior análisis, exportando la libreta en un estructura que entienda el computador. Pero, ¿Qué son los datos estructurados?</p>
+<div id="datos-estructurados" class="section level2">
+<h2><span class="header-section-number">1.1</span> Datos estructurados</h2>
+<p>Nos referimos al arreglo que alberga todas las condiciones del diseño experimental, Y es el punto de partida para todo análisis que se pretenda realizar posteriormente, no prestar la debida atención a la correcta estructura de los datos no solo demandaria mayor inversión de tiempo y dinero, sino el riego inminente de echar por tierra todo el ensayo.</p>
+<p>Motivo por el cual los datos deben de ordenarse siguiendo las siguientes consideraciones desde el comienzo:</p>
+<p><strong>1.- cada variable es una columna</strong>,</p>
+<p><strong>2.- cada obervación es una fila</strong>, y</p>
+<p><strong>3.- una unidad experimental por celda</strong>.</p>
+<p>Todas estas condiciones del trabajo deben ser estructuras en una única hoja, de la siguiente manera.</p>
+<div class="figure">
+<img src="img/etiqueta.png" alt="Datos Estructurados: " />
+<p class="caption"><strong>Datos Estructurados: </strong></p>
+</div>
+<p>A continuación, un ejemplo. Se realiza un experimento donde se desea saber el efecto de una enfermedad sobre individuos de la misma especie pero diferentes cargas genéticas.</p>
+<p><em>Antillano</em>, <em>Mexicano</em>, <em>Nabal</em>, y <em>zutano</em></p>
+<p>Queremos saber como se comportan a la enfermedad “pudrición de raiz” causado por <em>P. cinnamomi</em>. Por tanto, para este factor tenemos dos sub-factores.</p>
+<p><em>inoculado</em> y <em>noinoculado</em></p>
+<p>Los hospederos de dicha enfermedad tendrán la condiciones del invernadero y patógeno virulante. Se deses comparar como responden estos individuos a la enfermedad. Por tal razón el diseño estadístico sera un:</p>
+<p><strong>Diseño completamente al azar con dos factores</strong></p>
+<p>De dos factores: hospedero y patógeno. Ademas, debera de evaluarse en el tiempo (<strong>8 evaluaciones</strong>) para conocer el progreso de la enfermedad, tendra <strong>6 repeticiones</strong> en cada evaluación (<em>6 plantas de palto</em>) y la variable respuesta será:</p>
+<pre><code>  Weight fresh root (kg), .........FreshRootKg
+  Weight dry root (Kg), ...........DryRootKg
+  Weight humidity root (Kg), ......Hd_rootKg
+  Weight fresh foliage (Kg), ......FreshFolKg
+  Weight dry foliage (Kg), ........DryFolKg
+  Weight humidity foliage (Kg), ...Hd_folKg
+  Length root (Km), y..............LengthRootKm
+  Damage root (%)..................Damage
+  </code></pre>
+<p>Entoces, el libro de campo que se construya debe cumplir con el diseño que se va a ejecutar, un Diseño completamente al azar con dos factores:</p>
+<p><strong>factor Patogeno</strong>: <em>inoculado</em> y <em>noinoculado</em>; y el otro factor: <strong>factor Huesped</strong>: <em>antillano</em>, <em>mexicano</em>, <em>zutano</em> y <em>nabal</em>.</p>
+<p>En la columna evaluación: se tiene a <em>E1</em> (evaluacion 1); y encabezando la primera columna con la etiqueta <em>rep</em> contiene a las repeticiones del diseño estadístico: <em>rep1</em>, <em>rep2</em>, <em>rep3</em>, <em>rep4</em>, <em>rep5</em>, <em>rep6</em>. ( <em>ver figura:</em> FieldBook DCA-2factor)</p>
+<p>Además, en las columnas “E” y “F” se ubican <em>las variables respuestas</em>: <em>FreshRootKg</em> y <em>DryRootKg</em>, el cual contiene los datos recogidos de cada unidad experimental. ( <em>ver figura:</em> FieldBook DCA-2factor)</p>
+<p>Cada celda en la columna variable corresponde al dato recogido de una unidad experimental. En <em>azul</em>, el cual corresponde a la celda “E22”, se leería de la siguiente manera: La repetición 3, del tratamiento (nabal-inoculado) de la evaluación número 1, de la variable FreshRootKg, el dato recogido es: <em>0.0351</em>.</p>
+<p>De igual manera para la celda en <em>rojo</em>, el cual corresponde a la celda <em>F8</em>, se leería de la siguiente manera: La repetición 1, del tratamiento (mexicano-inoculado) de la evaluación 1, de la variable DryRootKg, el dato reogido es: <em>0.0168</em>.</p>
+<div class="figure">
+<img src="img/datosestructurados.png" alt="FieldBook DCA-2factor: Diseño completamente al azar con dos factores" />
+<p class="caption"><strong>FieldBook DCA-2factor</strong>: Diseño completamente al azar con dos factores</p>
+</div>
+<p>A continuación, un ejemplo para un diseño completamente al azar, donde la evaluación en el tiempo representado por la columna <em>intime</em>. En este diseño los tratamientos corresponden a una sola columna denominada para esta table <em>treatment</em> ( T1, T2, T3, T4, T5), asi mismo las repeticiones corresponden a la columna <em>rep</em> (R1, R2, R3, R4) y seguidamente las variables respuestas: n_turiones, peso_turiones, n_yemas y Kg_ha.</p>
+<div class="figure">
+<img src="img/chavito.png" alt="Tabla, Diseño completamente al azar" />
+<p class="caption"><strong>Tabla, Diseño completamente al azar</strong></p>
+</div>
+<p>La lectura para cada celda con los datos datos serian de la misma manera, por ejemplo para <em>D2</em>: La repetición 1, del tratamiento T1 de la evaluacion número 1, de la variable n_turiones, el dato recogido es: <em>90657.60</em>.</p>
+<p>Es importante notar que ambas tablas alberga todas las características de los datos estructurados:</p>
+<p><em>1.- </em>cada variable es una columna,</p>
+<p><em>2.- </em>cada obervación es una fila, y</p>
+<p><em>3.- </em>una unidad experimental por celda.</p>
+</div>
+<div id="diseno-experimental." class="section level2">
+<h2><span class="header-section-number">1.2</span> Diseño Experimental.</h2>
+<p>Fieldbook llama a la caja de dialogo <em>Experimental Design</em> para iniciar con la construcción y posterior exportación de la libreta de campo. En <strong>Layout</strong> elegimos el modo por defecto <em>standard</em>, seguidamente en la caja <em>Design</em> tenemos un desplegable donde se debe elegir uno de los siguientes diseños estadísticos:</p>
+<p><strong>Diseño completamente al Azar (DCA) / Completely randomized design (CRD)</strong></p>
+<p><strong>Diseño completamente al azar (DBCA) / Randomized complete bock design (RCBD)</strong></p>
+<p><strong>Diseño cuadrado latino (DCL) / Latin square design (LSD)</strong></p>
+<p><strong>DCA con dos factores /Two-way factorial arrangement in completely randomized design</strong></p>
+<p><strong>DBCA con dos factores / Two-way factorial arrangement in complete block design</strong></p>
+<div class="figure">
+<img src="img/experimentaldesign.png" alt="Fieldbook: diseño de la libreta de campo" />
+<p class="caption"><strong>Fieldbook: diseño de la libreta de campo</strong></p>
+</div>
+<p><strong>Header</strong> aquí se debe colocar el nombre del factor de variación, el cual se vizualizará en el alibreta de campo como la cabecera de la columna al que pertenece los niveles del factor (tratamientos).</p>
+<p><strong>Factor levels</strong> corresponde a los niveles del factor, al que corresponde el factor de variación, y van separado por comas.</p>
+<p><strong>Variables</strong> correponde a las variables respuestas del experimento, y tambien van separados por comas. Se recomienda como parte de las buenas practicas que esta no sea un frase o palabra larga pues asignaria por defecto una columna demasiado larga. Por ejemplo, si se desea tener tener como variable respuesta: “El peso seco de la espiga de maíz amarillo duro en miligramos”, una asignación sería: <em>pe_AD</em>.</p>
+<p><em>recomendación:</em> Adicionalmente se recomienda dejar anotada en una hoja adicional, la leyendas para la construcción de variables, como las unidades en las que serán medidas, la fecha, entre otras anotaciones que el responsable considere importante.</p>
+<p><strong>Replications</strong> Se recomienda tener un mínimo de tres repeticiones. A mayor repeticiones reducirmos el error tipo I.</p>
+<p><strong>Intime</strong> Corresponde a las evaluaciones que se hacen en el tiempo, por defecto figura uno, pero es normal que en un experimento se hagan muchas más evaluaciones sobre la unidad experimental.</p>
+<p>A continuación, construiremos una libreta de campo (FieldBook) bajo un diseño en bloques completamente al azar (DBCA), con tres repeticiones, dos evaluaciones en el tiempo. para analizar tres tipos de fertilizantes (fertilizante A, fertilizante B y fertilizante C). Donde las variables respuestas serán: el peso, altura y nfrutos.</p>
+<div class="figure">
+<img src="img/libretacampo.png" alt="Fieldbook: diseño de la libreta de campo" />
+<p class="caption"><strong>Fieldbook: diseño de la libreta de campo</strong></p>
+</div>
+<p><em>Cabe precisar que para fines prácticos en este diseño las repeticiones cumplen la función de organizar los bloques, pero conceptual y teoricamente son diferentes.</em></p>
+<p>En la caja de <strong>Vizualization</strong> se muestra como se contruye la libreta de campo a la medida que se ingresan los requerimientos del diseño estadístico. Para seguidamente descargarlo en el formato de su preferencia: <em>csv</em> ó <em>xlsx</em>.</p>
+<div class="figure">
+<img src="img/libretacampo001.png" alt="Fieldbook: diseño de la libreta de campo" />
+<p class="caption"><strong>Fieldbook: diseño de la libreta de campo</strong></p>
+</div>
+<p>Una libreta de campo constuida en FieldBook, además de exportar la libreta de campo randomizado, adiciona una columana denominada <em>ID</em>, el cual correspode al código de identificación de cada unidad experimenta. Por ejemplo, cuando hablamos del <em>U102</em> nos referimos al tratamiento tipo de fertilizante C del bloque1. Y según el diseño va a ser evaluada dos veces, E1 y E2.</p>
+<p>A continuación queda colectar los datos en la variable respuesta que corresponda.</p>
+</div>
+<div id="nota-importante" class="section level2">
+<h2><span class="header-section-number">1.3</span> Nota importante</h2>
+<p>Al ser esta una plataforma de soporte estadístico no deja de ser riguroso con la nomenclatura y símbolos raros. Evitar ingresar simbolos extraños que <strong>No pertenezcan</strong> al alfabeto ingles. Salvo en <strong>label</strong>, el programa reconoce que haces referencia a un titulo, entonces los caracteres raros solo los imprimira, mas no los analizará. Por ejemplo</p>
+<p><del>palto001</del> incorrecto (dos tratamientos)</p>
+<p><del>pal?to%6“”</del> incorrecto (evitar términos extraños, ???!“#$%&amp;/()=??][{}[^)</p>
+<p>palto_001 correcto (un tratamiento)</p>
+<p>Palto001 correcto (un tratamiento)</p>
+<p><strong>evitar tildes y “ñ”</strong></p>
+<p>Aunque el programa soporta un mínimo de dos repeticiones, se recomienda al menos tener más de tres repeticiones. Siempre existe la posibilidad de pérdida de datos. En caso de ocurrir, mantener la plantilla tal cual y en la casilla donde corresponde el dato pérdido, dejar en blanco (nulo). No cero (0), puesto que es un valor diferente a nulo.</p>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": true,
+"facebook": false,
+"twitter": false,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "sepia",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/Flavjack/fieldbook-usm/blob/master/%s",
+"text": "Edit"
+},
+"download": null,
+"toc": {
+"collapse": "section",
+"scroll_highlight": true
+},
+"search": false
+});
+});
+</script>
+
+</body>
+
+</html>
