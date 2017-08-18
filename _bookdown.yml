@@ -1,7 +1,8 @@
 book_filename: "Fieldbook User Manual"
 output_dir: docs
 rmd_files: [
-  "index.Rmd", 
+  "index.Rmd",
+  #"qfieldbook_manual.Rmd",
   "interface.Rmd",
   "fieldbook.Rmd",
   "boxplot.Rmd",

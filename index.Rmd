@@ -1,10 +1,9 @@
 ---
 title: Fieldbook application user manual
-author: 'Flavio Lozano Isla, Jimmy R. Gomez Carrion, Felipe de Mendiburu'
-description: User manual to use fieldbook aplication for statistical analysis.
+author: 'Quipo Group'
+description: User manual to use QFieldbook aplication for statistical analysis.
 date: '`r Sys.Date()`'
 cover-image: img/cover.png
-description: Book for learn how to use fieldbook aplication for statistical analysis.
 documentclass: book
 favicon: img/favicon.ico
 github-repo: flavjack/fieldbook-usm
@@ -57,3 +56,10 @@ knitr::include_graphics("img/canvas.png")
 ```
 
 <https://www.youtube.com/watch?v=xSLer7p_Q5Y>
+
+# ¿Cómo citarnos?
+
+Pueden citar nuesta herramienta copiando el texto debajo:
+
+* QFieldBook (2017): An Interactive data analysis web platform for agricultural production and research. Quipo Group Inc., Lima, Peru. URL https://www.quipo.org/. 
+
