@@ -6,9 +6,9 @@ bookdown::gitbook:
       collapse: section
       scroll_highlight: yes
       before: |
-        <li> <a href="./">Fieldbook User Manual</a> </li>
+        <li><a href="./">Yupana user manual</a></li>
       after:  |
-        <li><a href="http://ec2-54-186-118-40.us-west-2.compute.amazonaws.com:3838/sample-apps/fieldbookpass/">FieldBook app</a></li>
+        <li><a href="http://www.quipo.org" target="_blank">Quipo.org</a></li>
     fontsettings:
       theme: sepia
       family: sans

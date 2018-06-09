@@ -1,4 +1,4 @@
-# import data
+# Import data
 
  Cuando hayas digitalizado tus datos recogidos de campo, de acuerdo a la plantilla diseñada en _Tools_ cargaras en **FieldBook** como url ó como xlsx.
 

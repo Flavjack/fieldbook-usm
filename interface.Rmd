@@ -1,31 +1,49 @@
-# Descripción de la Interface
+# Modulos de la aplicación
 
-La aplicación se separa en itms para el análisis estadísticos, los cuales se describen a continuación:
+La aplicación se divide en 9 modulos en los que nos permitiran generar el libro de campo, analisis multivariado, pruebas estadisticas y generación de gráficos. Los modulos se describen a continuación.
 
-## FieldBook
 
-Aqui podrás  construir tu libro de campo, es decir, diseñar y exportar el único formato que  entiende la computadora para su posterior análisis.
+```{r}
 
-## Importdata
+mdl <- data.frame(stringsAsFactors=FALSE,
+        "Modulo" = c("Welcome", 
+                   "User manual", 
+                   "FieldBook", 
+                   "Import data",
+                   "Exploratory graphic",
+                   "Regression", 
+                   "Multivariante",
+                   "Statistics", 
+                   "Graphics"),
+        
+   "Descripción" = c(
+     
+"Presentacion de la aplicación, sus principales características y como hacer la referencia bibliográfica de la plataforma.",
 
-Una vez recogido los datos en el formato antes exportados, ahora aquí los cargaremos en la plataforma *FieldBook* y podrás usar la herramienta filtro para elegir los factores de interés.
+"Manual de usuario, paso a paso de como usar la plataforma.",
 
-## Outliers
+"Módulo para generar el libro de campo bajo los principales diseños experimentales (DCA, DBCA, DCL. factorial) para colecta de datos durante tu investigación.",
 
-Seguidamente, podrás  dar una vista rápida a la distribución y simetria de tus datos mediante la construcción de diagramas de cajas o boxplot.
+"Permite carga la base de datos (libreta de campo) en formato .xlsx o a través de una hoja de cálculo de google.",
 
-## Multivariante
 
-Aqui se presentan pruebas de correlación, analisis de componentes principales y correlación de pearson.
+"Permite la visualización de la distribución y simetría de tus datos mediante la construcción de diagramas de cajas o boxplot.",
 
-## Regression
+"Construye modelos de regresión lineal simple con la visualización de la ecuación y representación gráfica.",
 
-Se contruyen modelos de regresión lineal, visualización de la ecuación y representación gráfica.
+"Muestra de forma grafica los análisis multivariados de correlación de Pearson y en análisis de componentes principales (PCA).",
 
-## Stadistics
+"Permite el análisis estadístico de las variables a través del análisis de varianza, prueba de comparación de medias, resúmen de datos como evaluar los supuestos estadísticos.",
 
-Se desarrollan el análisis de varianza y prueba de comparación de medias mostrada en cuadro resúmen sensible a ser exportadas.
+"La visualización de los resultados en gráfico de barras o líneas de calidad científica, permitiendo modificar de acuerdo al requerimiento del usuario")
 
-## Graphics
+)
 
-La visualización de los resultados en gráfico de barras o líneas en b/n y colores. 
+
+knitr::kable(
+  mdl,
+  booktabs = TRUE,
+  caption = "Módulos de la aplicacion Yupana, para el análisis interactivo de datos."
+  )
+
+```

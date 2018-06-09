@@ -1,9 +1,4 @@
----
-output:
-  html_document: default
-  pdf_document: default
----
-# FieldBook
+# FieldBook (libreta de campo)
 
 FieldBook  construye libretas de campo, el cual sigue  un correcta estructuración de los datos para su posterior análisis, exportando la libreta en un estructura  que entienda el computador. Pero, ¿Qué son los datos estructurados?
 

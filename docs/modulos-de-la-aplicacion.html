@@ -32,8 +32,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="prev" href="regression.html">
-<link rel="next" href="graphics.html">
+<link rel="prev" href="index.html">
+<link rel="next" href="fieldbook-libreta-de-campo.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -105,25 +105,56 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="statistic" class="section level1">
-<h1><span class="header-section-number">6</span> Statistic</h1>
-<p>Esta es un plataforma de calculos estadistístico, reposa sobre el investigador su correcto uso.</p>
-<p>En <strong>Response</strong> seleccionamos la variable respuesta que deseamos analizar.</p>
-<p>En <strong>Block</strong> dependiendo del diseño estadístico seleccionar el bloque, o del criterio del investigador alguna columna que quiera aislar de manera particular.</p>
-<p>En <strong>Factors</strong> seleccionar el los tratamientos o factores.</p>
-<p>En <strong>Significance</strong> esta predefinido con un nivel de significancia del 5%, pero este también queda a criterio del investigador.</p>
-<p>En <strong>Type</strong> se presenta el tipo de prueba: <em>Tukey</em>, <em>Duncan</em> y <em>Snk (Student Newman Keuls)</em></p>
-<div class="figure">
-<img src="img/anva.png" alt="ANVA: Analisis de varianza" />
-<p class="caption"><strong>ANVA: Analisis de varianza</strong></p>
-</div>
-<p>Para nuestro ejemplo, segun la prueba de Tukey, existen diferencias estadisticamente significativas, entre evaluaciones, entre huespedes (individuos evaluados), y entre el factor patogeno (inoculado y noinoculado). Y, No existe diferencias estadisticamente significativas cuando interatuan los factores (huesped:patogeno). Es decir, cuando se tomo cada bloque (cada evaluacion) no existe una respuesta significativa de los hospederos con respecto a la presencia o ausenica del patogeno. Cuando se evaluo la interacción, No se encontro evidencias estadisticamente significativas. Y esto, resulta beneficioso, pues de ser significativo se hubiera negado la validez de los factores analizados.</p>
-<p>En en el cuadro adjunto, se los principales parametros y sus niveles de significancia, donde puede copiar, o descargar en formato csv o xlsx para poder hacer las graficas en el programa de su preferencia.</p>
-<div class="figure">
-<img src="img/table_anva.png" alt="Cuadro de significancia" />
-<p class="caption"><strong>Cuadro de significancia</strong></p>
-</div>
-<p>En la plataforma FieldBook tambien te permite relizar las graficas mas importantes, de lineas e histogramas para representar tu analisis de comparación de medias.</p>
+<div id="modulos-de-la-aplicacion" class="section level1">
+<h1><span class="header-section-number">1</span> Modulos de la aplicación</h1>
+<p>La aplicación se divide en 9 modulos en los que nos permitiran generar el libro de campo, analisis multivariado, pruebas estadisticas y generación de gráficos. Los modulos se describen a continuación.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 1.1: </span>Módulos de la aplicacion Yupana, para el análisis interactivo de datos.</caption>
+<thead>
+<tr class="header">
+<th align="left">Modulo</th>
+<th align="left">Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Welcome</td>
+<td align="left">Presentacion de la aplicación, sus principales características y como hacer la referencia bibliográfica de la plataforma.</td>
+</tr>
+<tr class="even">
+<td align="left">User manual</td>
+<td align="left">Manual de usuario, paso a paso de como usar la plataforma.</td>
+</tr>
+<tr class="odd">
+<td align="left">FieldBook</td>
+<td align="left">Módulo para generar el libro de campo bajo los principales diseños experimentales (DCA, DBCA, DCL. factorial) para colecta de datos durante tu investigación.</td>
+</tr>
+<tr class="even">
+<td align="left">Import data</td>
+<td align="left">Permite carga la base de datos (libreta de campo) en formato .xlsx o a través de una hoja de cálculo de google.</td>
+</tr>
+<tr class="odd">
+<td align="left">Exploratory graphic</td>
+<td align="left">Permite la visualización de la distribución y simetría de tus datos mediante la construcción de diagramas de cajas o boxplot.</td>
+</tr>
+<tr class="even">
+<td align="left">Regression</td>
+<td align="left">Construye modelos de regresión lineal simple con la visualización de la ecuación y representación gráfica.</td>
+</tr>
+<tr class="odd">
+<td align="left">Multivariante</td>
+<td align="left">Muestra de forma grafica los análisis multivariados de correlación de Pearson y en análisis de componentes principales (PCA).</td>
+</tr>
+<tr class="even">
+<td align="left">Statistics</td>
+<td align="left">Permite el análisis estadístico de las variables a través del análisis de varianza, prueba de comparación de medias, resúmen de datos como evaluar los supuestos estadísticos.</td>
+</tr>
+<tr class="odd">
+<td align="left">Graphics</td>
+<td align="left">La visualización de los resultados en gráfico de barras o líneas de calidad científica, permitiendo modificar de acuerdo al requerimiento del usuario</td>
+</tr>
+</tbody>
+</table>
 
 </div>
             </section>
@@ -131,8 +162,8 @@
           </div>
         </div>
       </div>
-<a href="regression.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="graphics.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="fieldbook-libreta-de-campo.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -162,7 +193,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/Flavjack/fieldbook-usm/blob/master/stat.rmd",
+"link": "https://github.com/Flavjack/fieldbook-usm/blob/master/interface.Rmd",
 "text": "Edit"
 },
 "download": null,

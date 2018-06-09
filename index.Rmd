@@ -1,18 +1,37 @@
 ---
-title: Fieldbook application user manual
-author: 'Quipo Group'
-description: User manual to use QFieldbook aplication for statistical analysis.
+title: 'Yupana .: manual de usuario'
+author: 'Quipo.org'
 date: '`r Sys.Date()`'
-cover-image: img/cover.png
-documentclass: book
-favicon: img/favicon.ico
+description: User manual to use yupana aplication for statistical analysis
 github-repo: flavjack/fieldbook-usm
+cover-image: img/cover.jpg
+favicon: img/favicon.ico
+url: https\://quipo.org
 site: bookdown::bookdown_site
-bookdown::gitbook: null
-url: https\://flavjack.github.io/fieldbook-usm/
+documentclass: book
+bookdown::gitbook:
+output:
+  bookdown::word_document2:
+    reference_docx: style_1.docx
+link-citations: yes
+colorlinks: yes
+bibliography: 
+- book.bib
+- pkgs.bib
+csl: ICP.csl
 ---
 
+```{r include=FALSE}
+knitr::write_bib(c(
+  .packages(), 'shiny', 'agricolae', 'ggplot2', 'bookdown', 'knitr', 'rmarkdown', 'DT'), 'pkgs.bib')
+```
+
 ```{r setup, include=FALSE}
+
+# browseURL("https://www.zotero.org/styles")
+# browseURL("http://search.crossref.org/")
+# browseURL("http://truben.no/latex/bibtex/")
+# browseURL("")
 
 knitr::opts_chunk$set(
 	echo = FALSE,
@@ -20,46 +39,48 @@ knitr::opts_chunk$set(
 	warning = FALSE
 )
 
-options(digits = 2)
+options(
+  digits = 4, 
+  knitr.kable.NA = '',
+  OutDec= ",")
 
-library(fieldbook)
+library(bookdown) 
+library(inserttable) # devtools::install_github("lbusett/insert_table")
 library(knitr)
+library(citr)
+library(googlesheets)
+library(tidyverse)
+library(agricolae)
+library(FactoMineR)
+library(GerminaR)
 library(cowplot)
+library(grid) 
 library(png)
 library(jpeg)
-library(DT)
-library(citr)
+
 ```
 
-
-```{r include=FALSE}
-knitr::write_bib(c(
-  .packages(), 'shiny', 'agricolae', 'ggplot2', 'bookdown', 'knitr', 'rmarkdown', 'DT'), 'packages.bib')
-```
-
-
-# ¿Qué es  fieldbook?
-
-**FieldBook** es una aplicación  de servicio estadístico _online_  multiplataforma de interfaz amigable, intuitiva, y óptima; que busca ágilizar el desarrollo y validación de productos en las instituciones inmersas en el sector Agropecuario e industrial, en el que normalmente de desarrollan experimentos en pro de la mejora de un producto o servicio.
-
-El uso de la plataforma es diversa, pero hace énfasis en el sector agropecuario donde normalmente necesitamos realizar ensayos para evaluar la Letalidad de un nuevo insumo (químico o natural), mejora la fertilidad del suelo (fertilizante y/o enmiendas), introducción de nuevas variedades de cultivares. Necesariamente se deben de realizar pruebas de comparación de medias que validen científicamente la mejora del producto o servicio. Sin embargo, ello no quita su aplicación en otras áreas; como el comparar el rendimiento de nuevas baterias de celulares a climas extemos, por poner un ejemplo. 
-
-**FieldBook** es soporte para todos los trabajos antes mencionados y más, ellos deben de iniciar con la construcción de la libreta de campo. Es decir, la plataforma permite no solo el análisis sino que apriori permite el planteamiento del diseño experimental, escoger le diseño a utilizar, los factores y niveles del factor, el numero de repeticiones, el numero de evaluaciones que se realizarán y las variables que tendrá. Entonces cuando el experimento esta planteado, se contruye la libreta (de campo).
-
-Una vez construida la libreta la podrás exportarla e formato _.cvs ó .xlsx_ para la colecta de datos, esta misma libreta será importada a la plataforma y siguiendo una ruta lógica recurrente vizualizarás en tiempo real la distribución de los  datos, el nivel de correlación, comparación de medias, entre otras pruebas.
-
-Bienvenido al fascinante mundo de la innovación científica, nunca ántes el poder de las estadísticas a han estado **a un clic de transformar los datos en conocimiento.**
-
+# ¿Qué es Yupana? {-}
 
 ```{r, fig.align='center'}
-knitr::include_graphics("img/canvas.png")
+knitr::include_graphics("img/yupana.png")
 ```
 
-<https://www.youtube.com/watch?v=xSLer7p_Q5Y>
+**_Yupana_** es una aplicación web (_online_) interactiva multiplataforma de interfaz amigable e intuitiva; que busca agilizar el desarrollo de investigación y validación de productos en las instituciones del sector agropecuario e industrial.
 
-# ¿Cómo citarnos?
+**_Yupana_** permite el análisis de datos cuantitativos en diferentes áreas de ciencias agropecuarias y en el sector agro industrial ( e.i. evaluar un nuevo producto químico, dosis de fertilización, evaluación de nuevas variedades, etc). La plataforma no solo permite el análisis de datos, también ayuda en el planteamiento del diseño experimental (libreta de campo), escogiendo le diseño a utilizar (DCA, DBCA, DCK), los factores y niveles del factor, el numero de repeticiones, el numero de evaluaciones que se realizarán y las variables que se desea evaluar durante la fase experimental. 
 
-Pueden citar nuesta herramienta copiando el texto debajo:
 
-* QFieldBook (2017): An Interactive data analysis web platform for agricultural production and research. Quipo Group Inc., Lima, Peru. URL https://www.quipo.org/. 
+Construida la libreta de campo, esta se podrás exportarla e formato _.xlsx_ para la colecta de datos, siendo esta misma importada a la plataforma para su posterior análisis siguiendo un flujo de trabajo lógico donde vamos a poder visualizar en tiempo real la distribución de los  datos, el nivel de correlación, comparación de medias, y gráfica de los resultados.
 
+Bienvenido al fascinante mundo de la innovación científica, nunca antes el poder de las estadísticas a han estado **a un clic de transformar los datos en conocimiento.**
+
+## ¿Cómo citarnos? {-}
+
+Pueden citar Yupana de la siguiente manera:
+
+<div class="csl-bib-body" style="line-height: 1.35;">
+<div class="csl-entry" style="clear: left;">
+<div class="csl-right-inline" style="margin: 0 .4em 0 1.5em;">Lozano Isla, Flavio; Gomez Carrion, Jimmy; Benites Alfaro Omar, De Mendiburu, Felipe. <strong>Yupana: herramienta web interactiva para el análisis de datos en la investigación agropecuario e industrial</strong> [Internet]. Perú: Quipo.org; 2018. Disponible en: <a href="www.quipo.org">www.quipo.org</a></div>
+</div>
+</div>

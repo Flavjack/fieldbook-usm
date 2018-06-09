@@ -1,4 +1,4 @@
-# Outliers
+# Exploratory graphic
 
 Aquí se visualizan los valores atípicos, y permite al investigador tomar desiciones, como realizar una transfomación de datos ó suprimir valores atípicos.
 
