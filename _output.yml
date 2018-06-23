@@ -14,7 +14,7 @@ bookdown::gitbook:
       family: sans
       size: 2
     search: yes
-    edit: https://github.com/Flavjack/fieldbook-usm/blob/master/%s
+    edit: https://github.com/Flavjack/yupana-usm/blob/master/%s
     sharing:
       github: yes
       twitter: no
