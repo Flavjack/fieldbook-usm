@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Yupana .: manual de usuario</title>
-  <meta name="description" content="User manual to use yupana aplication for statistical analysis">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Multivariate | Yupana .: manual de usuario</title>
+  <meta name="description" content="User manual to use yupana aplication for statistical analysis" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Yupana .: manual de usuario" />
+  <meta property="og:title" content="5 Multivariate | Yupana .: manual de usuario" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://quipo.org" />
-  <meta property="og:image" content="https://quipo.orgimg/cover.jpg" />
+  <meta property="og:url" content="https://quipolab.com" />
+  <meta property="og:image" content="https://quipolab.comfiles/cover.jpg" />
   <meta property="og:description" content="User manual to use yupana aplication for statistical analysis" />
   <meta name="github-repo" content="flavjack/fieldbook-usm" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Yupana .: manual de usuario" />
+  <meta name="twitter:title" content="5 Multivariate | Yupana .: manual de usuario" />
   
   <meta name="twitter:description" content="User manual to use yupana aplication for statistical analysis" />
-  <meta name="twitter:image" content="https://quipo.orgimg/cover.jpg" />
+  <meta name="twitter:image" content="https://quipolab.comfiles/cover.jpg" />
 
-<meta name="author" content="Quipo.org">
+<meta name="author" content="www.quipolab.com" />
 
 
-<meta name="date" content="2018-06-23">
+<meta name="date" content="2020-03-02" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="prev" href="exploratory-graphic.html">
-<link rel="next" href="regression.html">
+  <link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="exploratory-graphic.html"/>
+<link rel="next" href="regression.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -50,7 +51,9 @@
 
 
 
-<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+<link rel="stylesheet" href="cnfg/style.css" type="text/css" />
 </head>
 
 <body>
@@ -63,30 +66,31 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Yupana user manual</a></li>
+<li><a href="https://www.quipolab.com" target="_blank"> QuipoLab </a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>¿Qué es Yupana?</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#como-citarnos"><i class="fa fa-check"></i>¿Cómo citarnos?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Yupana</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#webapp"><i class="fa fa-check"></i>WebApp</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#user-manual"><i class="fa fa-check"></i>User Manual</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#como-citar-la-app"><i class="fa fa-check"></i>Como citar la app?</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="modulos-de-la-aplicacion.html"><a href="modulos-de-la-aplicacion.html"><i class="fa fa-check"></i><b>1</b> Modulos de la aplicación</a></li>
-<li class="chapter" data-level="2" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html"><i class="fa fa-check"></i><b>2</b> FieldBook (libreta de campo)</a><ul>
-<li class="chapter" data-level="2.1" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html#datos-estructurados"><i class="fa fa-check"></i><b>2.1</b> Datos estructurados</a></li>
-<li class="chapter" data-level="2.2" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html#diseno-experimental."><i class="fa fa-check"></i><b>2.2</b> Diseño Experimental.</a></li>
-<li class="chapter" data-level="2.3" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html#nota-importante"><i class="fa fa-check"></i><b>2.3</b> Nota importante</a></li>
+<li class="chapter" data-level="1" data-path="caracteríticas.html"><a href="caracteríticas.html"><i class="fa fa-check"></i><b>1</b> Caracteríticas</a></li>
+<li class="chapter" data-level="2" data-path="modulos-de-la-aplicación.html"><a href="modulos-de-la-aplicación.html"><i class="fa fa-check"></i><b>2</b> Modulos de la aplicación</a></li>
+<li class="chapter" data-level="3" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html"><i class="fa fa-check"></i><b>3</b> FieldBook (libreta de campo)</a><ul>
+<li class="chapter" data-level="3.1" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html#nota-importante"><i class="fa fa-check"></i><b>3.1</b> Nota importante</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="exploratory-graphic.html"><a href="exploratory-graphic.html"><i class="fa fa-check"></i><b>3</b> Exploratory graphic</a></li>
-<li class="chapter" data-level="4" data-path="multivariate.html"><a href="multivariate.html"><i class="fa fa-check"></i><b>4</b> Multivariate</a><ul>
-<li class="chapter" data-level="4.1" data-path="multivariate.html"><a href="multivariate.html#correlation"><i class="fa fa-check"></i><b>4.1</b> correlation</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="multivariate.html"><a href="multivariate.html#colors-html"><i class="fa fa-check"></i><b>4.1.1</b> colors HTML</a></li>
+<li class="chapter" data-level="4" data-path="exploratory-graphic.html"><a href="exploratory-graphic.html"><i class="fa fa-check"></i><b>4</b> Exploratory graphic</a></li>
+<li class="chapter" data-level="5" data-path="multivariate.html"><a href="multivariate.html"><i class="fa fa-check"></i><b>5</b> Multivariate</a><ul>
+<li class="chapter" data-level="5.1" data-path="multivariate.html"><a href="multivariate.html#correlation"><i class="fa fa-check"></i><b>5.1</b> correlation</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="multivariate.html"><a href="multivariate.html#colors-html"><i class="fa fa-check"></i><b>5.1.1</b> colors HTML</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="multivariate.html"><a href="multivariate.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>4.2</b> Analisis de componentes principales</a></li>
+<li class="chapter" data-level="5.2" data-path="multivariate.html"><a href="multivariate.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>5.2</b> Analisis de componentes principales</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i><b>5</b> Regression</a></li>
-<li class="chapter" data-level="6" data-path="statistic.html"><a href="statistic.html"><i class="fa fa-check"></i><b>6</b> Statistic</a></li>
-<li class="chapter" data-level="7" data-path="graphics.html"><a href="graphics.html"><i class="fa fa-check"></i><b>7</b> Graphics</a></li>
+<li class="chapter" data-level="6" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i><b>6</b> Regression</a></li>
+<li class="chapter" data-level="7" data-path="statistic.html"><a href="statistic.html"><i class="fa fa-check"></i><b>7</b> Statistic</a></li>
+<li class="chapter" data-level="8" data-path="graphics.html"><a href="graphics.html"><i class="fa fa-check"></i><b>8</b> Graphics</a></li>
 <li class="divider"></li>
-<li><a href="http://www.quipo.org" target="_blank">Quipo.org</a></li>
+<li><a href="https://flavjack.shinyapps.io/yupana/" target="_blank"> Yupana app </a></li>
 
 </ul>
 
@@ -106,57 +110,56 @@
 
             <section class="normal" id="section-">
 <div id="multivariate" class="section level1">
-<h1><span class="header-section-number">4</span> Multivariate</h1>
+<h1><span class="header-section-number">5</span> Multivariate</h1>
 <p>En <strong>Multivariate</strong> tenemos dos presentaciones de las variables respuestas. <strong>Correlation</strong> de Pearson y <strong>PCA</strong> (Ánalisis de componentes principales) ambos con sus respectivos gráficos. Estos nos permite conocer el grado de correlacion de las variables y el agrupamiento de los datos.</p>
 <div class="figure">
-<img src="img/007_0multivariante.png" alt="correlation y pca" />
+<img src="files/007_0multivariante.png" alt="" />
 <p class="caption"><strong>correlation y pca</strong></p>
 </div>
 <div id="correlation" class="section level2">
-<h2><span class="header-section-number">4.1</span> correlation</h2>
+<h2><span class="header-section-number">5.1</span> correlation</h2>
 <p>En el cuadro de la izquierda <strong>Correlation</strong> de Pearson muestra el grado de <strong>Significance</strong>. Por defecto se trabaja con un grado de significancia igual al 5%, pero en el desplegable se puede elegir el nivel de significancia.</p>
 <p>La <strong>Correlation</strong> permite conocer el grado de relacion que tiene cada variable respuesta respecto a la otra, en un rango de <strong>+1 a -1</strong>, si el valor absoluto de la correlación es cercano a <strong>1</strong> indica que presenta una <em>magnitud</em> relación muy estrecha, y el signo es positivo o negativo indica que es una relación directa o inversa, respectivamente.</p>
 <p>En <strong>Font</strong> se puede escoger el tamaño de fuente, el cual por defecto es <strong>1</strong> es el tamaño de fuente más apropiado si se desea copiar la imagen para imprimir. Por último, <strong>color</strong>, en este se colocaran los colores HTML de su preferencia separados por un espacio para representar dicha correlación, notar que el orden como se ingresan los códigos de colores HTML es importante.</p>
 <div id="colors-html" class="section level3">
-<h3><span class="header-section-number">4.1.1</span> colors HTML</h3>
+<h3><span class="header-section-number">5.1.1</span> colors HTML</h3>
 <p>Para un mejor empleo de los colores HTML en <strong>Multivariate</strong>, se debera colocasr los <strong>colores HTML</strong> o llamar a los colores primarios por su nombre, como:</p>
 <p><em>yellow</em>, <em>red</em>, <em>green</em>, <em>blue</em>, <em>orange</em>, <em>black</em>, <em>gray</em>, <em>white</em>.</p>
 <p>Una forma practica de obtener el código de color HTLM es usando un <strong>eyes dropper</strong>, una vez instalado en su navegador, ingresar al <strong>color picker</strong>. Copiar el cÓdigo del color como señala el elipse.</p>
 <div class="figure">
-<img src="img/colors_picker.png" alt="colors HTML, eyes dropper. En rojo: cuenta gotas. En verde: copiar codigo de color" />
+<img src="files/colors_picker.png" alt="" />
 <p class="caption"><strong>colors HTML</strong>, eyes dropper. <strong>En rojo:</strong> cuenta gotas. <strong>En verde:</strong> copiar codigo de color</p>
 </div>
 <p>Copiado el codigo de color HTML, pegar en <strong>Multivariate - correlation - color</strong>.</p>
 <p>Es asi como puede personalizar sus graficos de la <strong>Correlation</strong>.</p>
 <div class="figure">
-<img src="img/007_07multivariante.png" alt="correlation y PCA - Type var" />
+<img src="files/007_07multivariante.png" alt="" />
 <p class="caption"><strong>correlation y PCA</strong> - Type var</p>
 </div>
 </div>
 </div>
 <div id="analisis-de-componentes-principales" class="section level2">
-<h2><span class="header-section-number">4.2</span> Analisis de componentes principales</h2>
+<h2><span class="header-section-number">5.2</span> Analisis de componentes principales</h2>
 <p>En el analisis de los componentes principales (PCA), se tiene el desplegable <strong>Type</strong> donde se presenta <em>biplot</em>, <em>var</em> e <em>ind</em>; y junto a <strong>Variable</strong>, se puede escoger el plano que mejor grafique el proposito, ó la combinacion de estos.</p>
 <p><strong>PCA- Type</strong> permite encoger <em>var</em> el que representa la correlacion de las variables respuestas en una grafica simple de radio = <strong>1</strong>. El cual tienen el mismo marco conceptual que <strong>Correlation</strong> visto lineas arribas, pero en representación grafica y la variable de agrupamiento.</p>
 <p>La variable respuestas poseen una <em>magnitud</em> y <em>direccion</em> respecto a los cuadrantes del plano cartesiano.</p>
 <pre><code>Para el ejemplo observamos que se mueven una dirección opuesta (relacion inversa) y magnitud cercano a cercana a &quot;1&quot; (una correlaciin alta) entre Damage y LengthRootKm. Al investigador le interesan particularmente estas dos variables, puesto se esta estudiando la damage que causa un patogeno a las raices, es prioritario centrar su atención sobre los sintomas primarios (el deterioro de la raices).  </code></pre>
 <div class="figure">
-<img src="img/damage_length.png" alt="Relacion Damage y LengthRootKm inoculado y noinoculado (control)" />
+<img src="files/damage_length.png" alt="" />
 <p class="caption"><strong>Relacion Damage y LengthRootKm</strong> <em>inoculado</em> y <em>noinoculado</em> (control)</p>
 </div>
 <p>En el item <strong>FieldBook</strong> se construyó la libreta de campo y el orden como se contruye la columna: repetición, bloque, factores y variables, es importante a la hora de escoger en <strong>Multivariate - PCA - Variable</strong>,la columna que va a representar.</p>
 <pre><code>Para el ejemplo, cuando elige la varible 2, elige la columna 2, que representa a las evaluaciones por lo que en la leyenda irá las evaluaciones con su respectivo color, y en label, tiene la oportunidad de cambiar el rótulo de la columna, puede cambiar eva  por Evaluación, por ejemplo.</code></pre>
 <div class="figure">
-<img src="img/007_02multivariante.png" alt="PCA Los ejes en gris representan el % de variación de la variancia para cada componente." />
+<img src="files/007_02multivariante.png" alt="" />
 <p class="caption"><strong>PCA</strong> <em>Los ejes en gris</em> representan el % de variación de la <em>variancia</em> para cada componente.</p>
 </div>
 <pre><code> &lt;El análisis de componentes principales suele ser muy utilizanda cuando se desea relacionar la presencia de un especie de cuerdo al habitat, por poner un ejemplo&gt;</code></pre>
 <div class="figure">
-<img src="img/007_multivariante.png" alt="Correlation y Analisis de componentes principales" />
+<img src="files/007_multivariante.png" alt="" />
 <p class="caption"><strong>Correlation y Analisis de componentes principales</strong></p>
 </div>
 <p>El eje de las componentes principales representa el <em>porcentaje de variabilidad de la varianza</em> y no tiene otro significado del que le da el investigador.</p>
-
 </div>
 </div>
             </section>
@@ -170,11 +173,13 @@
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -182,28 +187,36 @@ gitbook.start({
 "github": true,
 "facebook": false,
 "twitter": false,
-"google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
-"theme": "sepia",
+"theme": "white",
 "family": "sans",
 "size": 2
 },
 "edit": {
-"link": "https://github.com/Flavjack/yupana-usm/blob/master/multivariate.rmd",
+"link": "https://github.com/Flavjack/yupana-usm/blob/master/index.Rmd",
 "text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
 },
 "download": null,
 "toc": {
 "collapse": "section",
 "scroll_highlight": true
 },
-"search": true
+"search": true,
+"info": false
 });
 });
 </script>

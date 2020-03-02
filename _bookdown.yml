@@ -1,12 +1,3 @@
 book_filename: "Yupana"
 output_dir: docs
-rmd_files: [
-  "index.Rmd",
-  "interface.Rmd",
-  "fieldbook.Rmd",
-  "boxplot.Rmd",
-  "multivariate.rmd",
-  "regression.rmd",
-  "stat.rmd",
-  "graphs.rmd"
-  ]
+rmd_files: ["index.Rmd"]

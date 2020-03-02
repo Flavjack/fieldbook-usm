@@ -1,45 +1,46 @@
 <!DOCTYPE html>
-<html >
-
+<html lang="" xml:lang="">
 <head>
 
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Yupana .: manual de usuario</title>
-  <meta name="description" content="User manual to use yupana aplication for statistical analysis">
-  <meta name="generator" content="bookdown 0.7 and GitBook 2.6.7">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>6 Regression | Yupana .: manual de usuario</title>
+  <meta name="description" content="User manual to use yupana aplication for statistical analysis" />
+  <meta name="generator" content="bookdown 0.17 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Yupana .: manual de usuario" />
+  <meta property="og:title" content="6 Regression | Yupana .: manual de usuario" />
   <meta property="og:type" content="book" />
-  <meta property="og:url" content="https://quipo.org" />
-  <meta property="og:image" content="https://quipo.orgimg/cover.jpg" />
+  <meta property="og:url" content="https://quipolab.com" />
+  <meta property="og:image" content="https://quipolab.comfiles/cover.jpg" />
   <meta property="og:description" content="User manual to use yupana aplication for statistical analysis" />
   <meta name="github-repo" content="flavjack/fieldbook-usm" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Yupana .: manual de usuario" />
+  <meta name="twitter:title" content="6 Regression | Yupana .: manual de usuario" />
   
   <meta name="twitter:description" content="User manual to use yupana aplication for statistical analysis" />
-  <meta name="twitter:image" content="https://quipo.orgimg/cover.jpg" />
+  <meta name="twitter:image" content="https://quipolab.comfiles/cover.jpg" />
 
-<meta name="author" content="Quipo.org">
+<meta name="author" content="www.quipolab.com" />
 
 
-<meta name="date" content="2018-06-23">
+<meta name="date" content="2020-03-02" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-<link rel="prev" href="multivariate.html">
-<link rel="next" href="statistic.html">
+  <link rel="shortcut icon" href="files/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="multivariate.html"/>
+<link rel="next" href="statistic.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
 
 
 
@@ -50,7 +51,9 @@
 
 
 
-<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+<link rel="stylesheet" href="cnfg/style.css" type="text/css" />
 </head>
 
 <body>
@@ -63,30 +66,31 @@
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Yupana user manual</a></li>
+<li><a href="https://www.quipolab.com" target="_blank"> QuipoLab </a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>¿Qué es Yupana?</a><ul>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html#como-citarnos"><i class="fa fa-check"></i>¿Cómo citarnos?</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Yupana</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#webapp"><i class="fa fa-check"></i>WebApp</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#user-manual"><i class="fa fa-check"></i>User Manual</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#como-citar-la-app"><i class="fa fa-check"></i>Como citar la app?</a></li>
 </ul></li>
-<li class="chapter" data-level="1" data-path="modulos-de-la-aplicacion.html"><a href="modulos-de-la-aplicacion.html"><i class="fa fa-check"></i><b>1</b> Modulos de la aplicación</a></li>
-<li class="chapter" data-level="2" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html"><i class="fa fa-check"></i><b>2</b> FieldBook (libreta de campo)</a><ul>
-<li class="chapter" data-level="2.1" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html#datos-estructurados"><i class="fa fa-check"></i><b>2.1</b> Datos estructurados</a></li>
-<li class="chapter" data-level="2.2" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html#diseno-experimental."><i class="fa fa-check"></i><b>2.2</b> Diseño Experimental.</a></li>
-<li class="chapter" data-level="2.3" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html#nota-importante"><i class="fa fa-check"></i><b>2.3</b> Nota importante</a></li>
+<li class="chapter" data-level="1" data-path="caracteríticas.html"><a href="caracteríticas.html"><i class="fa fa-check"></i><b>1</b> Caracteríticas</a></li>
+<li class="chapter" data-level="2" data-path="modulos-de-la-aplicación.html"><a href="modulos-de-la-aplicación.html"><i class="fa fa-check"></i><b>2</b> Modulos de la aplicación</a></li>
+<li class="chapter" data-level="3" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html"><i class="fa fa-check"></i><b>3</b> FieldBook (libreta de campo)</a><ul>
+<li class="chapter" data-level="3.1" data-path="fieldbook-libreta-de-campo.html"><a href="fieldbook-libreta-de-campo.html#nota-importante"><i class="fa fa-check"></i><b>3.1</b> Nota importante</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="exploratory-graphic.html"><a href="exploratory-graphic.html"><i class="fa fa-check"></i><b>3</b> Exploratory graphic</a></li>
-<li class="chapter" data-level="4" data-path="multivariate.html"><a href="multivariate.html"><i class="fa fa-check"></i><b>4</b> Multivariate</a><ul>
-<li class="chapter" data-level="4.1" data-path="multivariate.html"><a href="multivariate.html#correlation"><i class="fa fa-check"></i><b>4.1</b> correlation</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="multivariate.html"><a href="multivariate.html#colors-html"><i class="fa fa-check"></i><b>4.1.1</b> colors HTML</a></li>
+<li class="chapter" data-level="4" data-path="exploratory-graphic.html"><a href="exploratory-graphic.html"><i class="fa fa-check"></i><b>4</b> Exploratory graphic</a></li>
+<li class="chapter" data-level="5" data-path="multivariate.html"><a href="multivariate.html"><i class="fa fa-check"></i><b>5</b> Multivariate</a><ul>
+<li class="chapter" data-level="5.1" data-path="multivariate.html"><a href="multivariate.html#correlation"><i class="fa fa-check"></i><b>5.1</b> correlation</a><ul>
+<li class="chapter" data-level="5.1.1" data-path="multivariate.html"><a href="multivariate.html#colors-html"><i class="fa fa-check"></i><b>5.1.1</b> colors HTML</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="multivariate.html"><a href="multivariate.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>4.2</b> Analisis de componentes principales</a></li>
+<li class="chapter" data-level="5.2" data-path="multivariate.html"><a href="multivariate.html#analisis-de-componentes-principales"><i class="fa fa-check"></i><b>5.2</b> Analisis de componentes principales</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i><b>5</b> Regression</a></li>
-<li class="chapter" data-level="6" data-path="statistic.html"><a href="statistic.html"><i class="fa fa-check"></i><b>6</b> Statistic</a></li>
-<li class="chapter" data-level="7" data-path="graphics.html"><a href="graphics.html"><i class="fa fa-check"></i><b>7</b> Graphics</a></li>
+<li class="chapter" data-level="6" data-path="regression.html"><a href="regression.html"><i class="fa fa-check"></i><b>6</b> Regression</a></li>
+<li class="chapter" data-level="7" data-path="statistic.html"><a href="statistic.html"><i class="fa fa-check"></i><b>7</b> Statistic</a></li>
+<li class="chapter" data-level="8" data-path="graphics.html"><a href="graphics.html"><i class="fa fa-check"></i><b>8</b> Graphics</a></li>
 <li class="divider"></li>
-<li><a href="http://www.quipo.org" target="_blank">Quipo.org</a></li>
+<li><a href="https://flavjack.shinyapps.io/yupana/" target="_blank"> Yupana app </a></li>
 
 </ul>
 
@@ -106,17 +110,17 @@
 
             <section class="normal" id="section-">
 <div id="regression" class="section level1">
-<h1><span class="header-section-number">5</span> Regression</h1>
+<h1><span class="header-section-number">6</span> Regression</h1>
 <p>En regresión se puede construir modelos de regresion lineal simple, en <strong>Variable</strong> seleccionar la variable respuesta en la caja azul y verde, para el eje de las ordenadas y abscisas respectivamente.</p>
 <p>Al pie de cada caja se encuentra la casilla <strong>Label</strong> el cual se encuentran vacias, pero allí se le puede cambiar el rótulo al eje, pues de no modificarlo tomará el nombre de la columna con el que fue cargada la libreta de campo.</p>
 <p>En <strong>Brakes</strong> se trata de la segmentación de los ejes, y la mecánica es la misma mostrada en la construcción del <em>itm</em> <strong>Outliers</strong>.</p>
 <div class="figure">
-<img src="img/rlavel.png" alt="Selección de variables: " />
+<img src="files/rlavel.png" alt="" />
 <p class="caption"><strong>Selección de variables: </strong></p>
 </div>
 <p>despues de igresada las variables se contruye la gráfica de regresión linealla ecuación y el coeficiente de correlación de Pearson.</p>
 <div class="figure">
-<img src="img/rgrafico.png" alt="Regresión lineal: " />
+<img src="files/rgrafico.png" alt="" />
 <p class="caption"><strong>Regresión lineal: </strong></p>
 </div>
 <p>Note además que los cambios realizados en <strong>lavel</strong> han modificado el nombre a los ejes, cambiando los nombre originales por <em>Longitud de la raíz</em> para el eje de la ordenadas y Peso <em>seco de la raíz</em>.</p>
@@ -125,28 +129,33 @@
 <p>La consideración que debe tener para modificar <strong>Levels</strong> es que para modificar los nombre solo basta hacer dos espacios con la barra espaciadora para saltar al otro subnivel.</p>
 <p>Para el ejemplo se ha cambido el rótulo por defecto por <em>cinnamomi</em> y los subniveles por <em>g1</em> <em>g2</em> <em>g3</em> <em>g4</em></p>
 <div class="figure">
-<img src="img/rlavel1.png" alt="Selección de variables agrupado por: Huesped " />
+<img src="files/rlavel1.png" alt="" />
 <p class="caption"><strong>Selección de variables agrupado por: Huesped </strong></p>
 </div>
 <p>Note además que tanto en las cajas de color verde y azul se han modificado los rótulos de los ejes, con la unidades respectivas, si se desea ingresar simbología extraña, visitar <em>itm</em> <strong>Outliers</strong>.</p>
 <div class="figure">
-<img src="img/rgrafico1.png" alt="Regresion lineal agrupados por: Huesped " />
+<img src="files/rgrafico1.png" alt="" />
 <p class="caption"><strong>Regresion lineal agrupados por: Huesped </strong></p>
 </div>
 <p>En la caja de exportación, encuentras:</p>
 <p><strong>Size</strong> Modifica el tamaño de fuente, por defecto 2, pero se recomiendo descargar la imagen en fuente Size 1.</p>
 <p><strong>Color</strong> Modifica el color que va tener la figura, a colores ó en blanco y negro.</p>
-<p><strong>Legend</strong> Modifica la ubicación de la leyenda, <em>none</em>: sin leyenda, <em>left</em>: izquierda. <em>right</em>: derecha. <em>top</em>: arriba. <em>bottom</em>: abajo.</p>
-<p><strong>Eq.x</strong> Modifica la ubicación de la ecuación lineal en el eje de la abscisas. <strong>Eq.y</strong> Modifica la ubicación de la ecuación lineal en el eje de la ordenadas.</p>
+<p><strong>Legend</strong> Modifica la ubicación de la leyenda,
+<em>none</em>: sin leyenda,
+<em>left</em>: izquierda.
+<em>right</em>: derecha.
+<em>top</em>: arriba.
+<em>bottom</em>: abajo.</p>
+<p><strong>Eq.x</strong> Modifica la ubicación de la ecuación lineal en el eje de la abscisas.
+<strong>Eq.y</strong> Modifica la ubicación de la ecuación lineal en el eje de la ordenadas.</p>
 <p>Ambos pares ordendados (<strong>Eq.x</strong>,<strong>Eq.y</strong>) señalan donde se ubicará la ecuación lienal en el plano.</p>
 <p><strong>height</strong> Modifica la altura de la figura.</p>
 <p><strong>weight</strong> Modifica lo ancho de la figura.</p>
 <p><strong>TIF(300dip)</strong> Es el formato en el que se descarga la figura, es el formato <strong>TIF</strong> el que se requiere para las publicaciones académicas.</p>
 <div class="figure">
-<img src="img/rtable.png" alt="caja de exportación " />
+<img src="files/rtable.png" alt="" />
 <p class="caption"><strong>caja de exportación </strong></p>
 </div>
-
 </div>
             </section>
 
@@ -159,11 +168,13 @@
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
 <script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
 <script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
 <script>
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
@@ -171,28 +182,36 @@ gitbook.start({
 "github": true,
 "facebook": false,
 "twitter": false,
-"google": false,
 "linkedin": false,
 "weibo": false,
-"instapper": false,
+"instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
-"theme": "sepia",
+"theme": "white",
 "family": "sans",
 "size": 2
 },
 "edit": {
-"link": "https://github.com/Flavjack/yupana-usm/blob/master/regression.rmd",
+"link": "https://github.com/Flavjack/yupana-usm/blob/master/index.Rmd",
 "text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
 },
 "download": null,
 "toc": {
 "collapse": "section",
 "scroll_highlight": true
 },
-"search": true
+"search": true,
+"info": false
 });
 });
 </script>
