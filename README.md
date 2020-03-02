@@ -2,7 +2,7 @@
 
 **_Yupana_** es una aplicación web (_online_) interactiva multiplataforma de interfaz amigable e intuitiva; que busca agilizar el desarrollo de investigación y validación de productos en las instituciones del sector agropecuario e industrial.
 
-![yupana](files/logo.jpeg)
+<center>![yupana](files/logo.jpeg)</center>
 
 ## WebApp
 
